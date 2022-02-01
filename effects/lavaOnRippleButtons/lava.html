@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LAVA</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lava.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+</head>
+
+<body>
+    <!-- RIPPLE BUTTONS -->
+    <div class="container">
+        <button class="ripple">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>HOME</p>
+        </button>
+        <button class="ripple">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>ABOUT</p>
+        </button>
+        <button class="ripple">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>PROJECTS</p>
+        </button>
+        <button class="ripple">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>CONTACT</p>
+        </button>
+    </div>
+    <svg>
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur stdDeviation="10" />
+                <feColorMatrix values="1 0 0 0 0
+                    0 1 0 0 0 0 0 1 0 0 0 0 0 100 -15" />
+                <feBlend in="SourceGraphic" />
+            </filter>
+        </defs>
+    </svg>
+
+    <canvas id='lava'>
+        <div class="textBox">
+            <div class="content">
+                <nav>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                </nav>
+                <section class="mainBlock">
+                    <div>text</div>
+                </section>
+                <section class="topBlock">
+                    <div>text</div>
+                </section>
+                <section class="bottomBlock">
+                    <div>text</div>
+                </section>
+            </div>
+        </div>
+    </canvas>
+
+    <script src="lava.js" async defer></script>
+
+    <!-- LAVA FILTER -->
+    <svg>
+        <defs>
+            <filter id='goo'>
+                <feGaussianBlur in='SourceGraphic' stdDeviation='10' result='blur' />
+                <feColorMatrix in'blur' mode='matrix' values='1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 19 -9' />
+                <feComposite in='SourceGraphic' in2='goo' operator='atop' />
+            </filter>
+        </defs>
+    </svg>
+</body>
+
+</html>

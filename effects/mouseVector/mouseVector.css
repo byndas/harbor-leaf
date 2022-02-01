@@ -1,0 +1,454 @@
+/* prevents unexpected behavior across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*  element's total width and height
+        includes border & padding */
+}
+
+/* LIQUID LOADER ANIMATION */
+body {
+    /* prevents jumpy animation loop */
+    overflow: hidden;
+    /* background-color: #ad0170; */
+    background-color: transparent;
+    filter: url('#goo');
+}
+
+.loader {
+    position: absolute;
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    /* background: #fff; */
+    top: 50%;
+    bottom: 50%;
+    left: 20%;
+    /* only works because position is absolute */
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: rotate 20s linear infinite;
+    /* amazing filter effects! */
+    filter: blur(1px) contrast(15);
+    z-index: 10;
+}
+
+.shadowLoader {
+    position: absolute;
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    background: transparent;
+    top: 55%;
+    bottom: 50%;
+    left: 25%;
+    animation: rotate 20s linear infinite;
+    /* filter: blur(20px) contrast(10); */
+    z-index: 0;
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.particle {
+    background-color: firebrick;
+    /* background-color: #000; */
+    /* background-color: cornsilk; */
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.particle:first-child,
+.particle:last-child {
+    width: 25px;
+    height: 25px;
+}
+
+.particle:nth-child(1),
+.particle:nth-child(3),
+.particle:nth-child(5),
+.particle:nth-child(7),
+.particle:nth-child(9) {
+    animation: pulse 1.3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.9)
+    }
+
+    70% {
+        transform: scale(0.6)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.leftSpin {
+    animation: leftSpin 2.5s linear infinite;
+}
+
+@keyframes leftSpin {
+    from {
+        transform: rotate(0deg) translateX(50px)
+    }
+
+    to {
+        transform: rotate(360deg) translateX(50px)
+    }
+}
+
+.rightSpin {
+    animation: rightSpin 2.5s linear infinite;
+}
+
+@keyframes rightSpin {
+    from {
+        transform: rotate(360deg) translateX(50px)
+    }
+
+    to {
+        transform: rotate(0deg) translateX(50px)
+    }
+}
+
+/* adds random seeming animation motion */
+.particle:nth-child(3) {
+    animation-delay: .25s;
+}
+
+.particle:nth-child(5) {
+    animation-delay: .75s;
+}
+
+.particle:nth-child(7) {
+    animation-delay: 1.5s;
+}
+
+.particle:nth-child(9) {
+    animation-delay: .3s;
+}
+
+/* RIPPLE ANIMATION BUTTON HOVER */
+.container {
+    width: 220px;
+    position: relative;
+    height: auto;
+    margin: 70px auto;
+    filter: url(#goo);
+    z-index: 10;
+}
+
+.ripple {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
+    width: 220px;
+    height: 80px;
+    position: relative;
+    margin-bottom: 60px;
+    transition: .5s;
+}
+
+.ripple span {
+    display: block;
+    width: 20px;
+    height: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+    position: absolute;
+    background-color: dimgray;
+    /* background-color: #000; */
+    /* background-color: cornsilk; */
+    transition: .7s cubic-bezier(0, 2, .7, 2);
+}
+
+.ripple:hover span {
+    height: 120%;
+    transition: .4s cubic-bezier(.1, 1, .2, 4);
+}
+
+.ripple span:nth-child(1) {
+    transition-delay: .25s;
+    left: 0;
+}
+
+.ripple span:nth-child(2) {
+    transition-delay: .2s;
+    left: 20px;
+}
+
+.ripple span:nth-child(3) {
+    transition-delay: .15s;
+    left: 40px;
+}
+
+.ripple span:nth-child(4) {
+    transition-delay: .1s;
+    left: 60px;
+}
+
+.ripple span:nth-child(5) {
+    transition-delay: .05s;
+    left: 80px;
+}
+
+.ripple span:nth-child(6) {
+    transition-delay: .0s;
+    left: 100px;
+}
+
+.ripple span:nth-child(7) {
+    transition-delay: .05s;
+    left: 120px;
+}
+
+.ripple span:nth-child(8) {
+    transition-delay: .1s;
+    left: 140px;
+}
+
+.ripple span:nth-child(9) {
+    transition-delay: .15s;
+    left: 160px;
+}
+
+.ripple span:nth-child(10) {
+    transition-delay: .2s;
+    left: 180px;
+}
+
+.ripple span:nth-child(11) {
+    transition-delay: .25s;
+    left: 200;
+}
+
+p {
+    /* color: black; */
+    color: cornsilk;
+    font-size: 22px;
+    z-index: 10;
+    position: relative;
+    transform: .5s;
+}
+
+.ripple:hover p {
+    font-size: 1.5em;
+}
+
+/* GOOEY BUTTONS */
+.button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+i {
+    position: absolute;
+    top: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    z-index: 10;
+    color: white;
+}
+
+/* VECTOR FIELDS */
+
+#mouseVector {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: cornflowerblue;
+    z-index: -1;
+}
+
+#loopVector {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: cornflowerblue;
+    filter: blur(1px) contrast(1);
+    z-index: 10;
+}
+
+#particleVector {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.bubbler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: url('#goo');
+    background-color: transparent;
+
+}
+
+footer {
+    position: absolute;
+    color: cornsilk;
+    height: 50px;
+    left: 0;
+    bottom: 0;
+    line-height: 50px;
+    width: 100%;
+    text-align: right;
+    /* border: 1px solid black; */
+}
+
+/* LAVA */
+
+.textBox {
+    position: absolute;
+    width: calc(100% - 400px);
+}
+
+.content {
+    margin-top: 50px;
+}
+
+nav {
+    width: 200px;
+    margin-left: 142px;
+    z-index: 50;
+    position: absolute;
+}
+
+.slider {
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    position: relative;
+    color: white;
+    margin-bottom: 5px;
+    font-size: 14px;
+
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.slider::before {
+    content: '';
+    width: 100%;
+    height: 50%;
+    line-height: 50px;
+    position: absolute;
+    background: black;
+    top: 0;
+    left: 0;
+    transition: .3s;
+}
+
+.slider:nth-child(1)::before {
+    content: 'HOME';
+}
+
+.slider:nth-child(2)::before {
+    content: 'PROJECTS';
+}
+
+.slider:nth-child(3)::before {
+    content: 'CONTACT';
+}
+
+.slider:nth-child(4)::before {
+    content: 'ABOUT';
+}
+
+.slider:nth-child(5)::before {
+    content: 'HIRE ME';
+}
+
+.slider:hover::before {
+    transform: translateX(-50px);
+}
+
+.mainBlock {
+    width: 100%;
+    min-width: 500px;
+    height: 270px;
+    border: 3px solid black;
+    position: absolute;
+    padding: 38px 60px;
+    background: black;
+    color: white;
+    font-size: 14px;
+    margin-left: 350px;
+}
+
+.mainBlock>div> :nth-child() .topBlock {
+    width: 80%;
+    border: 2px solid black;
+    color: black;
+    height: 70px;
+    top: -70px;
+    position: absolute;
+    left: 60px;
+}
+
+.topBlock>div {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%, -50%);
+    text-align: center;
+}
+
+.bottomBlock {
+    border: 2px solid black;
+    color: black;
+    bottom: -140px;
+    height: 140px;
+    left: 70px;
+    width: 80%;
+    position: absolute;
+}
+
+.bottomBlock>div {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%, -50%);
+    text-align: center;
+}
+
+#lava {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: url('#goo');
+}
