@@ -6,33 +6,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-
-    <title>harbor-leaf</title>
+    <link rel="stylesheet" href="/effects/loopVector/loopVector.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <title>marc byndas</title>
 </head>
 
 <body>
+    <nav>
+        <span>HOME / </span>
+        <span>PROJECTS / </span>
+        <span>CONTACT</span>
+    </nav>
     <div class="swiper">
         <div class="swiper-wrapper">
-            <section class="swiper-slide" id="home">HOME</section>
-            <section class="swiper-slide" id="projects">PROJECTS</section>
-            <section class="swiper-slide" id="contact">CONTACT</section>
+            <section class="swiper-slide" id="home">
+                <canvas id='loopVector'></canvas>
+                <svg>
+                    <defs>
+                        <filter id='goo'>
+                            <feGaussianBlur in='SourceGraphic' stdDeviation='10' result='blur' />
+                            <feColorMatrix in'blur' mode='matrix' values='1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 19 -9' />
+                            <feComposite in='SourceGraphic' in2='goo' operator='atop' />
+                        </filter>
+                    </defs>
+                </svg>
+            </section>
+            <section class="swiper-slide" id="projects">
+
+            </section>
+            <section class="swiper-slide" id="contact">
+
+            </section>
         </div>
     </div>
 </body>
+<footer></footer>
 
 </html>
+
+<script src="/effects/loopVector/loopVector.js" async defer></script>
 <script type="module">
     import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
 
     const swiper = new Swiper('.swiper', {
         direction: 'vertical',
-        effect: 'cube',
+        effect:'creative',
+        /* 'cube' | 'fade' | 'coverflow' | 'flip' | 'creative' | 'cards' */
         speed: 1000,
         roundLengths: true,
     });
-    swiper.slideNext();
 </script>
 <style>
+    html {
+        background-color: floralwhite;
+    }
+
     body {
         margin: 0;
         padding: 0;
@@ -41,9 +72,11 @@
     }
 
     .swiper,
+    canvas,
     section {
         width: 100vw;
         height: 100vh;
+        display: flex;
     }
 
     #home {
@@ -56,5 +89,13 @@
 
     #contact {
         background-color: grey;
+    }
+
+    nav {
+        width: 100vw;
+    }
+
+    span {
+        cursor: pointer;
     }
 </style>
