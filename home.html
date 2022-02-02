@@ -11,9 +11,7 @@
 </head>
 
 <body>
-    <!-- Slider main container -->
     <div class="swiper">
-        <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <section class="swiper-slide" id="home">HOME</section>
             <section class="swiper-slide" id="projects">PROJECTS</section>
@@ -23,24 +21,27 @@
 </body>
 
 </html>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script type="module">
     import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
 
     const swiper = new Swiper('.swiper', {
         direction: 'vertical',
-        spaceBetween: 0,
-        autoHeight: true,
         effect: 'cube',
+        speed: 1000,
+        roundLengths: true,
     });
+    swiper.slideNext();
 </script>
 <style>
     body {
-        display: block;
         margin: 0;
+        padding: 0;
+        display: block;
+        position: relative;
     }
 
-    .swiper {
+    .swiper,
+    section {
         width: 100vw;
         height: 100vh;
     }
