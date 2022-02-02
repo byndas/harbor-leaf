@@ -5,18 +5,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/effects/loopVector/loopVector.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+
     <title>marc byndas</title>
+
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="stylesheet" href="/effects/particleVector/particleVector.css">
+
+    <link rel="stylesheet" href="/effects/lavaOnRippleButtons/lava.css">
+
+    <link rel="stylesheet" href="/effects/loopVector/loopVector.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <script src="swiper.js"></script>
+
+    <script src="/effects/bubbles/bubbles.js" async defer></script>
+
+    <script src="/effects/loopVector/loopVector.js" async defer></script>
+
+    <script src="/effects/lavaOnRippleButtons/lava.js" async defer></script>
+
+    <script src="effects/particleVector/particleVector.js" async defer></script>
+
 </head>
 
 <body>
+    <canvas id='particleVector'></canvas>
     <nav>
-        <span>HOME / </span>
-        <span>PROJECTS / </span>
-        <span>CONTACT</span>
+        <!-- RIPPLE BUTTONS -->
+        <div class="container">
+            <button class="ripple">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <p>HOME</p>
+            </button>
+            <button class="ripple">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <p>ABOUT</p>
+            </button>
+            <button class="ripple">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <p>PROJECTS</p>
+            </button>
+            <button class="ripple">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <p>CONTACT</p>
+            </button>
+        </div>
+        <svg>
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur stdDeviation="10" />
+                    <feColorMatrix values="1 0 0 0 0
+                    0 1 0 0 0 0 0 1 0 0 0 0 0 100 -15" />
+                    <feBlend in="SourceGraphic" />
+                </filter>
+            </defs>
+        </svg>
+
+        <canvas id='lava'>
+            <div class="textBox">
+                <div class="content">
+                    <nav>
+                        <button class="slider"></button>
+                        <button class="slider"></button>
+                        <button class="slider"></button>
+                        <button class="slider"></button>
+                        <button class="slider"></button>
+                    </nav>
+                    <section class="mainBlock">
+                        <div>text</div>
+                    </section>
+                    <section class="topBlock">
+                        <div>text</div>
+                    </section>
+                    <section class="bottomBlock">
+                        <div>text</div>
+                    </section>
+                </div>
+            </div>
+        </canvas>
+
+        <!-- LAVA FILTER -->
+        <svg>
+            <defs>
+                <filter id='goo'>
+                    <feGaussianBlur in='SourceGraphic' stdDeviation='10' result='blur' />
+                    <feColorMatrix in'blur' mode='matrix' values='1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 19 -9' />
+                    <feComposite in='SourceGraphic' in2='goo' operator='atop' />
+                </filter>
+            </defs>
+        </svg>
     </nav>
+
     <div class="swiper">
         <div class="swiper-wrapper">
             <section class="swiper-slide" id="home">
@@ -42,60 +168,24 @@
             </section>
         </div>
     </div>
+
+    <canvas id="bubbles" class="bubbler"></canvas>
+    <canvas id="bubblesBg" class="bubbler"></canvas>
+
+    <footer><span>FOOTER</span></footer>
+    <svg>
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGrphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values=" 1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 30 -30" result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+        </defs>
+    </svg>
+
 </body>
-<footer></footer>
 
 </html>
-
-<script src="/effects/loopVector/loopVector.js" async defer></script>
-<script type="module">
-    import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
-
-    const swiper = new Swiper('.swiper', {
-        direction: 'vertical',
-        effect:'creative',
-        /* 'cube' | 'fade' | 'coverflow' | 'flip' | 'creative' | 'cards' */
-        speed: 1000,
-        roundLengths: true,
-    });
-</script>
-<style>
-    html {
-        background-color: floralwhite;
-    }
-
-    body {
-        margin: 0;
-        padding: 0;
-        display: block;
-        position: relative;
-    }
-
-    .swiper,
-    canvas,
-    section {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-    }
-
-    #home {
-        background-color: skyblue;
-    }
-
-    #projects {
-        background-color: peru;
-    }
-
-    #contact {
-        background-color: grey;
-    }
-
-    nav {
-        width: 100vw;
-    }
-
-    span {
-        cursor: pointer;
-    }
-</style>

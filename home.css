@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
+.swiper,
+canvas,
+section {
+    top: 5vh;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+}
+
+#home {
+    background-color: skyblue;
+}
+
+#projects {
+    background-color: peru;
+}
+
+#contact {
+    background-color: grey;
+}
+
+nav,
+footer {
+    width: 100vw;
+    height: auto;
+    font-size: 5vh;
+    position: fixed;
+}
+
+.bubbler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: url('#goo');
+    background-color: transparent;
+
+}
+
+footer {
+    position: absolute;
+    color: cornsilk;
+    height: 50px;
+    left: 0;
+    bottom: 0;
+    line-height: 50px;
+    width: 100%;
+    text-align: right;
+    /* border: 1px solid black; */
+}
+
+span {
+    cursor: pointer;
+}
