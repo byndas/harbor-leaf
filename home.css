@@ -36,12 +36,19 @@ footer {
     line-height: 50px;
     text-align: right;
     border: 1px solid black;
+
+    /* prevents jumpy animation loop */
+    overflow: hidden;
+    background-color: orangered;
+    /* background-color: #ad0170; */
+    background-color: transparent;
+    filter: url('#bubbler');
 }
 
 .swiper {
     top: 23vh;
     width: 100vw;
-    height: 70vh;
+    height: 73vh;
     position: fixed;
 }
 
@@ -62,7 +69,7 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    filter: url('#goo');
+    height: 7vh;
+    filter: url('#bubbler');
     background-color: transparent;
 }

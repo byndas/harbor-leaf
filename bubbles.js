@@ -16,10 +16,11 @@ let bubbles = [];
 let bgBubbles = [];
 
 function addBubble() {
-    bubbles.push(new Bubble('rgb(225, 194, 194', 1.8));
+        bubbles.push(new Bubble('orangered', 1.8));
+    // bubbles.push(new Bubble('rgb(225, 194, 194', 1.8));
 }
 function addBgBubble() {
-    bgBubbles.push(new Bubble('#ad0170', 2.5));
+    bgBubbles.push(new Bubble('#86282e', 2.5));
 }
 class Bubble {
     constructor(color, ySpeed) {
@@ -33,8 +34,9 @@ class Bubble {
         this.color = color;
     }  
     update() {
-        this.vy += 0.1; // velocity y-axis
-        this.vr += 0.2;
+        // controls speed
+        this.vy += 0.01;
+        this.vr += 0.01;
         this.y -= this.vy;
         this.x += this.vx;
         if (this.radius > 1) {

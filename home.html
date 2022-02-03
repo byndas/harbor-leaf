@@ -21,8 +21,7 @@
     <!-- <link rel="stylesheet" href="/effects/loopVector/loopVector.css"> -->
     <!-- <script src="/effects/loopVector/loopVector.js" async defer></script> -->
 
-    <!-- <link rel="stylesheet" href="/effects/bubbles/bubbles.css"> -->
-    <!-- <script src="/effects/bubbles/bubbles.js" async defer></script> -->
+    <script src="bubbles.js" async defer></script>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script type="module">
@@ -137,25 +136,23 @@
     </div>
 
     <footer>
-        <span>
-            <!-- STICKY BUBBLES FOOTER -->
-            <!-- <canvas id="bubbles" class="bubbler"></canvas> -->
-            <!-- <canvas id="bubblesBg" class="bubbler"></canvas> -->
-            <!-- <svg>
-                <defs>
-                    <filter id="goo">
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                        <feColorMatrix in="blur" mode="matrix" values=" 1 0 0 0 0
-                0 1 0 0 0
-                0 0 1 0 0
-                0 0 0 30 -30" result="goo" />
-                        <feBlend in="SourceGraphic" in2="goo" />
-                    </filter>
-                </defs>
-            </svg> -->
-        </span>
+        <canvas id="bubbles" class="bubbler"></canvas>
+        <canvas id="bubblesBg" class="bubbler"></canvas>
     </footer>
 </body>
+<!-- BUBBLER FILTER -->
+<svg>
+    <defs>
+        <filter id="bubbler">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values=" 1 0 0 0 0
+            0 1 0 0 0
+            0 0 1 0 0
+            0 0 0 30 -30" result="bubbler" />
+            <feBlend in="SourceGraphic" in2="bubbler" />
+        </filter>
+    </defs>
+</svg>
 <!-- #GOO FILTER -->
 <svg>
     <defs>
