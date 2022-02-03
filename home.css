@@ -23,13 +23,23 @@ span {
 
 nav,
 footer {
+    height: 23vh;
     width: 100vw;
-    height: 21vh;
     position: absolute;
 }
 
+footer {
+    color: cornsilk;
+    height: 7vh;
+    left: 0;
+    bottom: 0;
+    line-height: 50px;
+    text-align: right;
+    border: 1px solid black;
+}
+
 .swiper {
-    top: 15vh;
+    top: 23vh;
     width: 100vw;
     height: 70vh;
     position: fixed;
@@ -55,16 +65,4 @@ footer {
     height: 100%;
     filter: url('#goo');
     background-color: transparent;
-}
-
-footer {
-    position: absolute;
-    color: cornsilk;
-    height: 50px;
-    left: 0;
-    bottom: 0;
-    line-height: 50px;
-    width: 100%;
-    text-align: right;
-    border: 1px solid black;
 }

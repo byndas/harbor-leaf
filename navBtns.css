@@ -30,7 +30,7 @@ p {
 .ripple {
     filter: url(#goo);
     z-index: 10;
-    width: 33vw;
+    width: 33.33vw;
     height: 15vh;
     border: none;
     font: inherit;
@@ -38,10 +38,6 @@ p {
     outline: inherit;
     background: none;
     cursor: pointer;
-    /* width: 210px;
-    height: 80px; */
-    /* position: relative; */
-    /* margin: 4vh -11vw 4vh 4vw; */
     margin: 4vh 2vw;
 }
 
