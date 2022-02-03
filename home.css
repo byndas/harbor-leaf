@@ -11,6 +11,12 @@ body {
         includes border & padding */
 }
 
+:root {
+    --home-bg-color: skyblue;
+    --projects-bg-color: peru;
+    --contact-bg-color: grey;
+}
+
 span {
     cursor: pointer;
 }
@@ -18,7 +24,7 @@ span {
 nav,
 footer {
     width: 100vw;
-    height: 15vh;
+    height: 21vh;
     position: absolute;
 }
 
@@ -30,15 +36,15 @@ footer {
 }
 
 #home {
-    background-color: skyblue;
+    background-color: var(--home-bg-color);
 }
 
 #projects {
-    background-color: peru;
+    background-color: var(--projects-bg-color);
 }
 
 #contact {
-    background-color: grey;
+    background-color: var(--contact-bg-color);
 }
 
 .bubbler {
