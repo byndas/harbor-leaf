@@ -1,17 +1,32 @@
+/* prevents unexpected behavior across browsers */
 body {
     margin: 0;
     padding: 0;
     display: block;
     position: relative;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    /*  element's total width and height
+        includes border & padding */
 }
 
-.swiper,
-canvas,
-section {
-    top: 5vh;
+span {
+    cursor: pointer;
+}
+
+nav,
+footer {
     width: 100vw;
-    height: 90vh;
-    display: flex;
+    height: 15vh;
+    position: absolute;
+}
+
+.swiper {
+    top: 15vh;
+    width: 100vw;
+    height: 70vh;
+    position: fixed;
 }
 
 #home {
@@ -26,14 +41,6 @@ section {
     background-color: grey;
 }
 
-nav,
-footer {
-    width: 100vw;
-    height: auto;
-    font-size: 5vh;
-    position: fixed;
-}
-
 .bubbler {
     position: absolute;
     top: 0;
@@ -42,7 +49,6 @@ footer {
     height: 100%;
     filter: url('#goo');
     background-color: transparent;
-
 }
 
 footer {
@@ -54,9 +60,5 @@ footer {
     line-height: 50px;
     width: 100%;
     text-align: right;
-    /* border: 1px solid black; */
-}
-
-span {
-    cursor: pointer;
+    border: 1px solid black;
 }

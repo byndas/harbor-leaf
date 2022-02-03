@@ -1,11 +1,13 @@
 /* prevents unexpected behavior across browsers */
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /*  element's total width and height
         includes border & padding */
 }
+
+*/
 
 /* GOOEY BUTTONS */
 .button {

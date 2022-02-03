@@ -5,40 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>marc byndas</title>
-
-    <link rel="stylesheet" href="home.css">
-
-    <link rel="stylesheet" href="/effects/particleVector/particleVector.css">
-
-    <link rel="stylesheet" href="/effects/lavaOnRippleButtons/lava.css">
-
-    <link rel="stylesheet" href="/effects/loopVector/loopVector.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
 
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="navBtns.css">
+
+    <!-- <link rel="stylesheet" href="/effects/particleVector/particleVector.css"> -->
+    <!-- <script src="effects/particleVector/particleVector.js" async defer></script> -->
+
+    <!-- <link rel="stylesheet" href="/effects/lavaOnRippleButtons/lava.css"> -->
+    <!-- <script src="/effects/lavaOnRippleButtons/lava.js" async defer></script> -->
+
+    <!-- <link rel="stylesheet" href="/effects/loopVector/loopVector.css"> -->
+    <!-- <script src="/effects/loopVector/loopVector.js" async defer></script> -->
+
+    <!-- <link rel="stylesheet" href="/effects/bubbles/bubbles.css"> -->
+    <!-- <script src="/effects/bubbles/bubbles.js" async defer></script> -->
+
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
 
-    <script src="swiper.js"></script>
-
-    <script src="/effects/bubbles/bubbles.js" async defer></script>
-
-    <script src="/effects/loopVector/loopVector.js" async defer></script>
-
-    <script src="/effects/lavaOnRippleButtons/lava.js" async defer></script>
-
-    <script src="effects/particleVector/particleVector.js" async defer></script>
+        const swiper = new Swiper('.swiper', {
+        direction: 'vertical',
+        effect:'creative',
+        /* 'cube' | 'fade' | 'coverflow' | 'flip' | 'creative' | 'cards' */
+        speed: 1000,
+        roundLengths: true,
+        });
+</script>
 
 </head>
 
 <body>
-    <canvas id='particleVector'></canvas>
     <nav>
         <!-- RIPPLE BUTTONS -->
-        <div class="container">
+        <div class="navBtnsWrapper">
             <button class="ripple">
-                <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -62,11 +67,9 @@
                 <span></span>
                 <span></span>
                 <span></span>
-                <span></span>
                 <p>ABOUT</p>
             </button>
             <button class="ripple">
-                <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -90,22 +93,11 @@
                 <span></span>
                 <span></span>
                 <span></span>
-                <span></span>
                 <p>CONTACT</p>
             </button>
         </div>
-        <svg>
-            <defs>
-                <filter id="goo">
-                    <feGaussianBlur stdDeviation="10" />
-                    <feColorMatrix values="1 0 0 0 0
-                    0 1 0 0 0 0 0 1 0 0 0 0 0 100 -15" />
-                    <feBlend in="SourceGraphic" />
-                </filter>
-            </defs>
-        </svg>
-
-        <canvas id='lava'>
+    </nav>
+    <!-- <canvas id='lava'>
             <div class="textBox">
                 <div class="content">
                     <nav>
@@ -126,39 +118,26 @@
                     </section>
                 </div>
             </div>
-        </canvas>
-
-        <!-- LAVA FILTER -->
-        <svg>
-            <defs>
-                <filter id='goo'>
-                    <feGaussianBlur in='SourceGraphic' stdDeviation='10' result='blur' />
-                    <feColorMatrix in'blur' mode='matrix' values='1 0 0 0 0
-                0 1 0 0 0
-                0 0 1 0 0
-                0 0 0 19 -9' />
-                    <feComposite in='SourceGraphic' in2='goo' operator='atop' />
-                </filter>
-            </defs>
-        </svg>
-    </nav>
+        </canvas> -->
 
     <div class="swiper">
         <div class="swiper-wrapper">
             <section class="swiper-slide" id="home">
-                <canvas id='loopVector'></canvas>
-                <svg>
+                <!-- <canvas id='particleVector'></canvas> -->
+
+                <!-- <canvas id='loopVector'></canvas> -->
+                <!-- <svg>
                     <defs>
                         <filter id='goo'>
                             <feGaussianBlur in='SourceGraphic' stdDeviation='10' result='blur' />
                             <feColorMatrix in'blur' mode='matrix' values='1 0 0 0 0
-                0 1 0 0 0
-                0 0 1 0 0
-                0 0 0 19 -9' />
+                                        0 1 0 0 0
+                                        0 0 1 0 0
+                                        0 0 0 19 -9' />
                             <feComposite in='SourceGraphic' in2='goo' operator='atop' />
                         </filter>
                     </defs>
-                </svg>
+                </svg> -->
             </section>
             <section class="swiper-slide" id="projects">
 
@@ -168,24 +147,39 @@
             </section>
         </div>
     </div>
-    <!-- STICKY BUBBLES FOOTER -->
-    <canvas id="bubbles" class="bubbler"></canvas>
-    <canvas id="bubblesBg" class="bubbler"></canvas>
 
-    <footer><span>FOOTER</span></footer>
-    <svg>
-        <defs>
-            <filter id="goo">
-                <feGaussianBlur in="SourceGrphic" stdDeviation="10" result="blur" />
-                <feColorMatrix in="blur" mode="matrix" values=" 1 0 0 0 0
+    <footer>
+        <span>
+            <!-- STICKY BUBBLES FOOTER -->
+            <!-- <canvas id="bubbles" class="bubbler"></canvas> -->
+            <!-- <canvas id="bubblesBg" class="bubbler"></canvas> -->
+            <!-- <svg>
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values=" 1 0 0 0 0
                 0 1 0 0 0
                 0 0 1 0 0
                 0 0 0 30 -30" result="goo" />
-                <feBlend in="SourceGraphic" in2="goo" />
-            </filter>
-        </defs>
-    </svg>
-
+                        <feBlend in="SourceGraphic" in2="goo" />
+                    </filter>
+                </defs>
+            </svg> -->
+        </span>
+    </footer>
 </body>
+<!-- #GOO FILTER -->
+<svg>
+    <defs>
+        <filter id='goo'>
+            <feGaussianBlur in='SourceGraphic' stdDeviation='10' result='blur' />
+            <feColorMatrix in'blur' mode='matrix' values='1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 19 -9' />
+            <feComposite in='SourceGraphic' in2='goo' operator='atop' />
+        </filter>
+    </defs>
+</svg>
 
 </html>

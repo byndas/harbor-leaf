@@ -1,0 +1,115 @@
+/* RIPPLE ANIMATION BUTTON HOVER */
+nav {
+    display: flex;
+}
+
+.navBtnsWrapper {
+    flex: auto;
+    z-index: 10;
+    filter: url(#goo);
+    /* width: 10vw; */
+    /* height: auto; */
+    /* align-items: center;
+    justify-content: center; */
+}
+
+p {
+    z-index: 10;
+    transform: .5s;
+    font-size: 22px;
+    color: cornsilk;
+    text-align: center;
+    position: relative;
+}
+
+.ripple:hover p {
+    color: skyblue
+}
+
+.ripple {
+    border: none;
+    font: inherit;
+    color: inherit;
+    outline: inherit;
+    background: none;
+    cursor: pointer;
+
+    width: 210px;
+    height: 80px;
+    position: relative;
+    margin: 20px;
+    transition: .5s;
+}
+
+.ripple span {
+    top: 50%;
+    width: 20px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    transform: translate(0, -50%);
+    transition: .7s cubic-bezier(0, 2, .7, 2);
+    background-color: #000;
+    /* background-color: dimgray; */
+    /* background-color: cornsilk; */
+}
+
+.ripple:hover span {
+    height: 115%;
+    transition: .4s cubic-bezier(.1, 1, .2, 4);
+}
+
+.ripple span:nth-child(1) {
+    transition-delay: .25s;
+    left: 0;
+}
+
+.ripple span:nth-child(2) {
+    transition-delay: .2s;
+    left: 20px;
+}
+
+.ripple span:nth-child(3) {
+    transition-delay: .15s;
+    left: 40px;
+}
+
+.ripple span:nth-child(4) {
+    transition-delay: .1s;
+    left: 60px;
+}
+
+.ripple span:nth-child(5) {
+    transition-delay: .05s;
+    left: 80px;
+}
+
+.ripple span:nth-child(6) {
+    transition-delay: .0s;
+    left: 100px;
+}
+
+.ripple span:nth-child(7) {
+    transition-delay: .05s;
+    left: 120px;
+}
+
+.ripple span:nth-child(8) {
+    transition-delay: .1s;
+    left: 140px;
+}
+
+.ripple span:nth-child(9) {
+    transition-delay: .15s;
+    left: 160px;
+}
+
+.ripple span:nth-child(10) {
+    transition-delay: .2s;
+    left: 180px;
+}
+
+.ripple span:nth-child(11) {
+    transition-delay: .25s;
+    left: 200;
+}
