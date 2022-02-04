@@ -84,9 +84,36 @@
             <span></span>
             <p>CONTACT</p>
         </button>
+        <!-- #GOO FILTER -->
+        <svg>
+            <defs>
+                <filter id='goo'>
+                    <feGaussianBlur in='SourceGraphic' stdDeviation='10' result='blur' />
+                    <feColorMatrix in'blur' mode='matrix' values='1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 19 -9' />
+                    <feComposite in='SourceGraphic' in2='goo' operator='atop' />
+                </filter>
+            </defs>
+        </svg>
     </nav>
     <canvas id="bubbles" class="bubbler"></canvas>
     <canvas id="bubblesBg" class="bubbler"></canvas>
+    <!-- BUBBLER FILTER -->
+    <svg>
+        <defs>
+            <filter id="bubbler">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values=" 1 0 0 0 0
+            0 1 0 0 0
+            0 0 1 0 0
+            0 0 0 30 -30" result="bubbler" />
+                <feBlend in="SourceGraphic" in2="bubbler" />
+            </filter>
+        </defs>
+    </svg>
+
     <!-- <canvas id='lava'>
             <div class="textBox">
                 <div class="content">
@@ -142,32 +169,5 @@
     <!-- <footer></footer> -->
 
 </body>
-
-<!-- BUBBLER FILTER -->
-<svg>
-    <defs>
-        <filter id="bubbler">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-            <feColorMatrix in="blur" mode="matrix" values=" 1 0 0 0 0
-            0 1 0 0 0
-            0 0 1 0 0
-            0 0 0 30 -30" result="bubbler" />
-            <feBlend in="SourceGraphic" in2="bubbler" />
-        </filter>
-    </defs>
-</svg>
-<!-- #GOO FILTER -->
-<svg>
-    <defs>
-        <filter id='goo'>
-            <feGaussianBlur in='SourceGraphic' stdDeviation='10' result='blur' />
-            <feColorMatrix in'blur' mode='matrix' values='1 0 0 0 0
-                0 1 0 0 0
-                0 0 1 0 0
-                0 0 0 19 -9' />
-            <feComposite in='SourceGraphic' in2='goo' operator='atop' />
-        </filter>
-    </defs>
-</svg>
 
 </html>
