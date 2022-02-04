@@ -40,6 +40,7 @@ class Particle {
     }
 
     // checks particle position, checks mouse position, moves the particle, draws the particle
+    /*
     update() {
         // checks if particle is still within starCanvas
         if (this.x > starCanvas.width || this.x < 0){
@@ -49,7 +50,6 @@ class Particle {
 		    this.directionY = -this.directionY;
             this.speedY = this.directionY;
 	    }
-        /*
         // checks mouse position/particle position - collision detection
         let dx = mouse.x - this.x;
         let dy = mouse.y - this.y;
@@ -68,14 +68,14 @@ class Particle {
                 this.y-=10;
             }
         }
-        */
-
+        
         // moves particle
-        this.x += this.directionX;
-        this.y += this.directionY;
+        // this.x += this.directionX;
+        // this.y += this.directionY;
         
         this.draw();
     }
+    */
 }
 
 // checks if particles are close enough to draw line between them
@@ -118,25 +118,23 @@ function init(){
 }
 
 // creates animation loop
-// function animate(){
+function animate(){
 // 	requestAnimationFrame(animate);
 // 	ctxStar.clearRect(0,0,innerWidth,innerHeight);
 	
-// 	for (let i = 0; i < particleArray.length; i++){
-// 		particleArray[i].update();
-// 	}
-//     connect();
-// }
+	for (let i = 0; i < particleArray.length; i++){
+		particleArray[i].draw();
+	}
+    connect();
+}
 init();
-// animate();
-connect();
-
+animate();
 
 // RESPONSIVE - empties and refills particle array every time window changes size + changes starCanvas size
 // window.addEventListener('resize',
-// 	function(){
-// 		starCanvas.width = innerWidth;
-// 		starCanvas.height = innerHeight;
+	// function(){
+		// starCanvas.width = innerWidth;
+		// starCanvas.height = innerHeight;
         //  mouse.radius = ((starCanvas.height/80) * (starCanvas.width/80));
 		// init();
 // 	}
