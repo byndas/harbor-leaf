@@ -16,18 +16,18 @@ let bubbles = [];
 let bgBubbles = [];
 
 function addBubble() {
-        bubbles.push(new Bubble('orangered', 1.8));
+    bubbles.push(new Bubble('#86282e', .5));
     // bubbles.push(new Bubble('rgb(225, 194, 194', 1.8));
 }
 function addBgBubble() {
-    bgBubbles.push(new Bubble('#86282e', 2.5));
+    bgBubbles.push(new Bubble('orangered', 1.5));
 }
 class Bubble {
     constructor(color, ySpeed) {
         this.radius = (Math.random() * 150) + 30;
         this.life = true;
         this.x = (Math.random() * window.innerWidth);
-        this.y = (Math.random() * 0.0000002) + window.innerHeight + this.radius;
+        this.y = (Math.random() * 0.0002) + window.innerHeight + this.radius;
         this.vy = ((Math.random() * 0.0002) + 0.001) + ySpeed;
         this.vr = 0;
         this.vx = (Math.random() * 4) - 2;
@@ -36,7 +36,7 @@ class Bubble {
     update() {
         // controls speed
         this.vy += 0.01;
-        this.vr += 0.01;
+        this.vr += 0.005;
         this.y -= this.vy;
         this.x += this.vx;
         if (this.radius > 1) {

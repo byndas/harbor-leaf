@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="navBtns.css">
 
-    <!-- <link rel="stylesheet" href="/effects/particleVector/particleVector.css"> -->
-    <!-- <script src="effects/particleVector/particleVector.js" async defer></script> -->
+    <script src="particleVector.js" async defer></script>
+    <script src="bubbles.js" async defer></script>
 
     <!-- <link rel="stylesheet" href="/effects/lavaOnRippleButtons/lava.css"> -->
     <!-- <script src="/effects/lavaOnRippleButtons/lava.js" async defer></script> -->
@@ -21,7 +21,6 @@
     <!-- <link rel="stylesheet" href="/effects/loopVector/loopVector.css"> -->
     <!-- <script src="/effects/loopVector/loopVector.js" async defer></script> -->
 
-    <script src="bubbles.js" async defer></script>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script type="module">
@@ -84,6 +83,8 @@
             <p>CONTACT</p>
         </button>
     </nav>
+    <canvas id="bubbles" class="bubbler"></canvas>
+    <canvas id="bubblesBg" class="bubbler"></canvas>
     <!-- <canvas id='lava'>
             <div class="textBox">
                 <div class="content">
@@ -110,7 +111,7 @@
     <div class="swiper">
         <div class="swiper-wrapper">
             <section class="swiper-slide" id="home">
-                <!-- <canvas id='particleVector'></canvas> -->
+                <canvas id='particleVector'></canvas>
 
                 <!-- <canvas id='loopVector'></canvas> -->
                 <!-- <svg>
@@ -136,10 +137,10 @@
     </div>
 
     <footer>
-        <canvas id="bubbles" class="bubbler"></canvas>
-        <canvas id="bubblesBg" class="bubbler"></canvas>
     </footer>
+
 </body>
+
 <!-- BUBBLER FILTER -->
 <svg>
     <defs>
