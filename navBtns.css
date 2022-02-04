@@ -3,29 +3,32 @@
 p {
     z-index: 10;
     font-size: 6vh;
-    line-height: 3vh;
-    color: skyblue;
+    line-height: 0vh;
     text-align: center;
     position: relative;
+    /* color: HSL(48, 89%, 90%); */
+    color: skyblue;
 }
 
 .ripple:hover p {
-    color: cornsilk;
+    color: rgba(0247, 220, 111);
 }
 
 .ripple {
     filter: url(#goo);
     z-index: 10;
     width: 33.33vw;
-    height: 15vh;
+    height: 11.5vh;
     border: none;
     font: inherit;
     color: inherit;
     outline: inherit;
     background: none;
     cursor: pointer;
-    margin: 4vh 2vw;
-    opacity: .5;
+    opacity: .65;
+    margin: 4.5vw 0 0 0;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
 .ripple span {

@@ -7,16 +7,16 @@ starCanvas.height = window.innerHeight;
 let particleArray;
 
 // gets mouse position
-let mouse = {
-	x: null,
-	y: null,
-  radius: ((starCanvas.height/80) * (starCanvas.width/80))
-}
-window.addEventListener('mousemove', 
-	function(event){
-		mouse.x = event.x;
-		mouse.y = event.y;
-});
+// let mouse = {
+// 	x: null,
+// 	y: null,
+//   radius: ((starCanvas.height/80) * (starCanvas.width/80))
+// }
+// window.addEventListener('mousemove', 
+// 	function(event){
+// 		mouse.x = event.x;
+// 		mouse.y = event.y;
+// });
 
 // creates Particle
 class Particle {
@@ -49,6 +49,7 @@ class Particle {
 		    this.directionY = -this.directionY;
             this.speedY = this.directionY;
 	    }
+        /*
         // checks mouse position/particle position - collision detection
         let dx = mouse.x - this.x;
         let dy = mouse.y - this.y;
@@ -67,7 +68,6 @@ class Particle {
                 this.y-=10;
             }
         }
-        /*
         */
 
         // moves particle
@@ -118,17 +118,18 @@ function init(){
 }
 
 // creates animation loop
-function animate(){
-	requestAnimationFrame(animate);
-	ctxStar.clearRect(0,0,innerWidth,innerHeight);
+// function animate(){
+// 	requestAnimationFrame(animate);
+// 	ctxStar.clearRect(0,0,innerWidth,innerHeight);
 	
-	for (let i = 0; i < particleArray.length; i++){
-		particleArray[i].update();
-	}
-    connect();
-}
+// 	for (let i = 0; i < particleArray.length; i++){
+// 		particleArray[i].update();
+// 	}
+//     connect();
+// }
 init();
-animate();
+// animate();
+connect();
 
 
 // RESPONSIVE - empties and refills particle array every time window changes size + changes starCanvas size
@@ -136,14 +137,14 @@ animate();
 // 	function(){
 // 		starCanvas.width = innerWidth;
 // 		starCanvas.height = innerHeight;
-//         mouse.radius = ((starCanvas.height/80) * (starCanvas.width/80));
-// 		init();
+        //  mouse.radius = ((starCanvas.height/80) * (starCanvas.width/80));
+		// init();
 // 	}
 // )
 // 2) SETS MOUSE POSITION AS UNDEFINED when it leaves starCanvas
-window.addEventListener('mouseout',
-	function(){
-		mouse.x = undefined;
-	    mouse.y = undefined;
-	}
-)
+// window.addEventListener('mouseout',
+// 	function(){
+// 		mouse.x = undefined;
+// 	    mouse.y = undefined;
+// 	}
+// )

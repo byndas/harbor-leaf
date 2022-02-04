@@ -24,7 +24,7 @@ function addBgBubble() {
 }
 class Bubble {
     constructor(color, ySpeed) {
-        this.radius = (Math.random() * 150);
+        this.radius = (Math.random());
         this.life = true;
         this.x = (Math.random() * window.innerWidth);
         this.y = (Math.random() * 0.2) + window.innerHeight + this.radius;
