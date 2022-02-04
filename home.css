@@ -78,7 +78,7 @@ footer {
     height: 23vh;
     position: absolute;
     filter: url('#bubbler');
-    background-color: transparent;
+    pointer-events: none;
 }
 
 #particleVector {
