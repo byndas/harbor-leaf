@@ -1,6 +1,7 @@
 /* RIPPLE ANIMATION BUTTON HOVER */
 
 p {
+    width: auto;
     z-index: 10;
     font-size: 6vh;
     line-height: 0vh;
@@ -18,7 +19,7 @@ p {
 .ripple {
     filter: url(#goo);
     z-index: 10;
-    width: 33.33vw;
+    width: calc(100vw / 3);
     height: 11.5vh;
     border: none;
     font: inherit;
@@ -27,7 +28,7 @@ p {
     background: none;
     cursor: pointer;
     opacity: .65;
-    margin: 4.5vw 0 0 0;
+    margin: 4vh 0 0 0;
     /* align-items: center; */
     /* justify-content: center; */
 }
@@ -40,9 +41,9 @@ p {
     position: absolute;
     transform: translate(-3%, -50%);
     transition: .7s cubic-bezier(0, 2, .7, 2);
-    background-color: #000;
-    /* background-color: dimgray; */
+    /* background-color: #000; */
     /* background-color: cornsilk; */
+    background-color: dimgray;
 }
 
 .ripple:hover span {

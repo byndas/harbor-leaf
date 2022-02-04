@@ -31,14 +31,14 @@ nav {
     display: flex;
     height: 23vh;
     background-color: var(--home-bg-color);
-    /* filter: url('#bubbler'); */
-    /* z-index: 10; */
 }
 
 footer {
-    height: 0vh;
     left: 0;
     bottom: 0;
+    z-index: 1;
+    height: 20vh;
+    filter: url('#bubbler');
     /* line-height: 7vh; */
     /* text-align: right; */
 
@@ -48,8 +48,8 @@ footer {
     color: cornsilk;
     /* background-color: orangered; */
     /* background-color: #ad0170; */
+    /* background-color: var(--home-bg-color); */
     /* background-color: transparent; */
-    background-color: var(--home-bg-color);
 }
 
 .swiper {
@@ -72,13 +72,12 @@ footer {
 }
 
 .bubbler {
-    top: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 23vh;
+    z-index: 40;
     position: absolute;
-    filter: url('#bubbler');
-    background-color: transparent;
 }
 
 #particleVector {

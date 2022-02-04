@@ -4,6 +4,7 @@ const starCanvas = document.getElementById("particleVector");
 const ctxStar = starCanvas.getContext("2d");
 starCanvas.width  = window.innerWidth;
 starCanvas.height = window.innerHeight;
+
 let particleArray;
 
 // gets mouse position
@@ -85,18 +86,18 @@ function connect() {
         for (let b = a; b < particleArray.length; b++){
             let distance = ((particleArray[a].x - particleArray[b].x) * (particleArray[a].x - particleArray[b].x))
             +   ((particleArray[a].y - particleArray[b].y) * (particleArray[a].y - particleArray[b].y));
-            if  (distance < (starCanvas.width/7) * (starCanvas.height/7))
+            
+            if  (distance < (starCanvas.width/7) * (starCanvas.height/7)) 
             {   
                 opacityValue = 1-(distance/10000);
                 ctxStar.strokeStyle='rgba(0247, 220, 111,' + opacityValue +')';
                 ctxStar.beginPath();
-                ctxStar.lineWidth = 1;
+                ctxStar.lineWidth = .75;
                 ctxStar.moveTo(particleArray[a].x, particleArray[a].y);
                 ctxStar.lineTo(particleArray[b].x, particleArray[b].y);
                 ctxStar.stroke();
-
             }    
-    }
+        }
     }
 }
 
@@ -104,16 +105,16 @@ function connect() {
 // creates particle array 
 function init(){
     particleArray = [];
-    let numberOfParticles = (starCanvas.height*starCanvas.width)/9000;
+    let numberOfParticles = (starCanvas.height*starCanvas.width)/8000;
     for (let i=0; i<numberOfParticles; i++){
-        let size = (Math.random()*5);
+        let size = (Math.random() * 2.75);
         let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
         let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
         // let directionX = (Math.random() * 2) - 1;
         // let directionY = (Math.random() * 2) - 1;
-        let color = 'gold';
+        
 
-        particleArray.push(new Particle(x, y, .5, .5, size, color));
+        particleArray.push(new Particle(x, y, .5, .5, size, 'gold'));
     }
 }
 
