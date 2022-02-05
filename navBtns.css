@@ -29,6 +29,7 @@ p {
     cursor: pointer;
     opacity: .65;
     margin: 4vh 0 0 0;
+    outline: 1rem solid black;
     /* align-items: center; */
     /* justify-content: center; */
 }
