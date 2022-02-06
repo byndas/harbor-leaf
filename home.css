@@ -38,7 +38,8 @@ footer {
     bottom: 0;
     z-index: 1;
     height: 20vh;
-    filter: url('#bubbler');
+    /* filter: url('#bubbler'); */
+
     /* line-height: 7vh; */
     /* text-align: right; */
 
@@ -72,6 +73,7 @@ footer {
 }
 
 .bubbler {
+    filter: url('#bubbling');
     bottom: 0;
     left: 0;
     width: 100vw;
