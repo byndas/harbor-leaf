@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="navBtns.css">
     <link rel="stylesheet" href="sky.css">
 
-    <script src="bubbles.js" async defer></script>
+    <!-- <script src="bubbles.js" async defer></script> -->
+    <script src="bubblers.js" async defer></script>
     <script src="particleVector.js" async defer></script>
 
     <!-- <link rel="stylesheet" href="/effects/lavaOnRippleButtons/lava.css"> -->
@@ -27,25 +28,26 @@
         import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
 
         const swiper = new Swiper('.swiper', {
-        direction: 'horizontal',
+        direction: 'vertical',
         effect:'creative',
         /* 'cube' | 'fade' | 'coverflow' | 'flip' | 'creative' | 'cards' */
         speed: 1000,
         roundLengths: true,
         });
-        /*
-        const navBtns = document.querySelector('nav').children;
-            console.log("navBtns[0]: " + navBtns[0]);
-        navBtns[0].on('click', swiper.slideTo(0));
-        navBtns[1].on('click', () => { swiper.slideTo(1) });
-        navBtns[2].on('click', function() {swiper.slideTo(2)});
-        */
+        const navAboutBtn = document.getElementById('navAbout');
+        const navProjectsBtn = document.getElementById('navProjects');
+        const navContactBtn = document.getElementById('navContact');
+
+        navAboutBtn.addEventListener('click', () => swiper.slideTo(0));
+        navProjectsBtn.addEventListener('click', () => swiper.slideTo(1));
+        navContactBtn.addEventListener('click', () => swiper.slideTo(2));
+        
     </script>
 </head>
 
 <body>
     <nav>
-        <button class="ripple" click="swiper.slideTo(0)">
+        <button class="ripple" id="navAbout" click="swiper.slideTo(0)">
             <span></span>
             <span></span>
             <span></span>
@@ -59,7 +61,7 @@
             <span></span>
             <p>ABOUT</p>
         </button>
-        <button class="ripple" click="swiper.slideTo(1)">
+        <button class="ripple" id="navProjects" click="swiper.slideTo(1)">
             <span></span>
             <span></span>
             <span></span>
@@ -73,7 +75,7 @@
             <span></span>
             <p>PROJECTS</p>
         </button>
-        <button class="ripple" click="swiper.slideTo(2)">
+        <button class="ripple" id="navContact" click="swiper.slideTo(2)">
             <span></span>
             <span></span>
             <span></span>
@@ -124,7 +126,7 @@
                 </svg>
             </section>
             <section class="swiper-slide" id="contact">
-                CONTACT INFO
+
             </section>
         </div>
     </div>

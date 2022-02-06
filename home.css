@@ -38,8 +38,7 @@ footer {
     bottom: 0;
     z-index: 1;
     height: 20vh;
-    /* filter: url('#bubbler'); */
-
+    /* filter: url('#bubbling'); */
     /* line-height: 7vh; */
     /* text-align: right; */
 
@@ -73,13 +72,13 @@ footer {
 }
 
 .bubbler {
-    filter: url('#bubbling');
     bottom: 0;
     left: 0;
     width: 100vw;
     height: 23vh;
     z-index: 40;
     position: absolute;
+    filter: url('#bubbling');
 }
 
 #particleVector {
