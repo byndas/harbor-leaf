@@ -5,7 +5,6 @@ window.onload = function(){
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     const flowField = new FlowFieldEffect(ctx, canvas.width, canvas.height);
-    console.log('loaded');
 }
 
 class FlowFieldEffect {
@@ -54,16 +53,16 @@ class FlowFieldEffect {
     }
     #getValue(x, y){
 
-        return (Math.cos(x * 0.005) + Math.sin(y * 0.005)) * Math.PI * this.#radius;
+        return (Math.cos(x * 0.05) + Math.sin(y * 0.05)) * Math.PI * this.#radius;
 
     }
     #draw(angle){
-        //const length1 = Math.random() * 10 + 10;
-        //const length2 = Math.random() * 10 + 10;
+        // const length1 = Math.random() * 10 + 10;
+        // const length2 = Math.random() * 10 + 10;
         this.#ctx.rotate(angle);
         this.#ctx.beginPath();
         this.#ctx.moveTo(0,0);
-        this.#ctx.lineTo(25, 0);
+        this.#ctx.lineTo(5, 0);
         this.#ctx.stroke();
     }
 }
