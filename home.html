@@ -13,14 +13,12 @@
     <link rel="stylesheet" href="navBtns.css">
     <link rel="stylesheet" href="sky.css">
 
-    <!-- <script src="bubbles.js" async defer></script> -->
-    <script src="bubblers.js" async defer></script>
+    <script src="bubblers.js"></script>
     <script src="particleVector.js" async defer></script>
+    <script src="loopVector.js" async defer></script>
 
     <!-- <link rel="stylesheet" href="/effects/lavaOnRippleButtons/lava.css"> -->
     <!-- <script src="/effects/lavaOnRippleButtons/lava.js" async defer></script> -->
-
-    <script src="loopVector.js" async defer></script>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script type="module">
@@ -40,7 +38,7 @@
         navProjectsBtn.addEventListener('click', () => swiper.slideTo(1));
         navContactBtn.addEventListener('click', () => swiper.slideTo(2));
         
-    </script>
+</script>
 </head>
 
 <body>
@@ -138,8 +136,8 @@
                     <feColorMatrix in="blur" mode="matrix" values=" 1 0 0 0 0
             0 1 0 0 0
             0 0 1 0 0
-            0 0 0 30 -30" result="bubbling" />
-                    <feBlend in="SourceGraphic" in2="bubbling" />
+            0 0 0 30 -30" result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
                 </filter>
             </defs>
         </svg>

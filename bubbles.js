@@ -87,6 +87,7 @@ function animate() {
     }
 
     requestAnimationFrame(animate);
+    console.log("animating bubblers");
 }
 
 window.addEventListener('load', animate);

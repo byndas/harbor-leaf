@@ -1,4 +1,9 @@
 /* RIPPLE ANIMATION BUTTON HOVER */
+@media (min-width: 800px) {
+    p {
+        color: rgb(77, 64, 64);
+    }
+}
 
 p {
     width: auto;
@@ -10,6 +15,7 @@ p {
     letter-spacing: 1vw;
     color: skyblue;
     /* color: HSL(48, 89%, 90%); */
+    cursor: pointer;
 }
 
 .ripple:hover p {
