@@ -103,26 +103,23 @@
                 </svg>
             </section>
             <section class="swiper-slide" id="contact">
-
+                <canvas id="bubbles" class="bubbler"></canvas>
+                <canvas id="bubblesBg" class="bubbler"></canvas>
             </section>
         </div>
     </div>
-    <footer>
-        <canvas id="bubbles" class="bubbler"></canvas>
-        <canvas id="bubblesBg" class="bubbler"></canvas>
-        <svg>
-            <defs>
-                <filter id="bubbling">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                    <feColorMatrix in="blur" mode="matrix" values=" 1 0 0 0 0
+    <svg>
+        <defs>
+            <filter id="bubbling">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values=" 1 0 0 0 0
             0 1 0 0 0
             0 0 1 0 0
-            0 0 0 30 -30" result="goo" />
-                    <feBlend in="SourceGraphic" in2="goo" />
-                </filter>
-            </defs>
-        </svg>
-    </footer>
+            0 0 0 30 -30" result="bubbling" />
+                <feBlend in="SourceGraphic" in2="bubbling" />
+            </filter>
+        </defs>
+    </svg>
 </body>
 <script src="bubblers.js"></script>
 <script type="module">

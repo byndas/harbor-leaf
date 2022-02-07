@@ -1,14 +1,20 @@
 /* RIPPLE ANIMATION BUTTON HOVER */
+/* @media screen and (max-width: 550px) {
+    p {
+        font-size: 50%;
+    }
+} */
+
 p {
     width: auto;
     z-index: 10;
-    font-size: 4vh;
+    /* font-size: 4vh; */
     line-height: 0vh;
     text-align: center;
     position: relative;
     letter-spacing: 1vw;
-    color: skyblue;
-    /* color: HSL(48, 89%, 90%); */
+    /* color: skyblue; */
+    color: HSL(48, 89%, 90%);
     cursor: pointer;
 }
 
@@ -23,16 +29,12 @@ p {
     height: 11.5vh;
     border: none;
     font: inherit;
-    color: inherit;
-    outline: inherit;
     background: none;
     cursor: pointer;
     opacity: .65;
     margin: 4vh 0 0 0;
     overflow: hidden;
     /* outline: 1rem solid black; */
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 
 .ripple span {
