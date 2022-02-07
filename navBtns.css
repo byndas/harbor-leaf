@@ -1,16 +1,10 @@
 /* RIPPLE ANIMATION BUTTON HOVER */
-@media (min-width: 800px) {
-    p {
-        color: rgb(77, 64, 64);
-    }
-}
-
 p {
     width: auto;
     z-index: 10;
-    font-size: 6vh;
+    font-size: 4vh;
     line-height: 0vh;
-    text-align: center;
+    /* text-align: center; */
     position: relative;
     letter-spacing: 1vw;
     color: skyblue;
