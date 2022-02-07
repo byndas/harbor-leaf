@@ -16,10 +16,10 @@ let bubbles = [];
 let bgBubbles = [];
 
 function addBubble() {
-    bubbles.push(new Bubble('rgb(225, 194, 194', 1.8));
+    bubbles.push(new Bubble('#283747', 1.8));
 }
 function addBgBubble() {
-    bgBubbles.push(new Bubble('#ad0170', 2.5));
+    bgBubbles.push(new Bubble('#1B4F72', 2.5));
 }
 class Bubble {
     constructor(color, ySpeed) {

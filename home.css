@@ -12,8 +12,9 @@ body {
 }
 
 :root {
+    /* --home-bg-color: rgb(58, 60, 61); */
     --home-bg-color: skyblue;
-    --projects-bg-color: peru;
+    --projects-bg-color: #AED6F1;
     --contact-bg-color: grey;
 }
 
@@ -91,12 +92,15 @@ footer {
 }
 
 #loopVector {
-    position: absolute;
     top: 0;
     left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: skyblue; */
     background-color: cornflowerblue;
-    filter: blur(1px) contrast(1);
+    filter: blur(.25px) contrast(.5);
     z-index: 10;
+    position: absolute;
 }
 
 svg {

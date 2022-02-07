@@ -11,19 +11,20 @@ class FlowFieldEffect {
     #ctx;
     #width;
     #height;
-    #count;
     #radius;
     constructor(ctx, width, height) {
         this.#ctx = ctx;
-        this.#ctx.lineWidth = 0.5;
+        this.#ctx.lineWidth = .25;
         this.#width = width;
         this.#height = height;
-        this.#radius = 1.9;
-        this.vr = 0.03;
+        this.#radius = .01;
+        this.vr = .005;
+        // this.vr = 0;
         this.#mapField();
         this.timer = 0;
-        this.cellSize = 7;
+        this.cellSize = 10;
         this.interval = 1000/60;
+        // this.interval = 0;
         this.timer = 0;
         this.lastTime = 0;
     }
@@ -52,17 +53,13 @@ class FlowFieldEffect {
 
     }
     #getValue(x, y){
-
         return (Math.cos(x * 0.05) + Math.sin(y * 0.05)) * Math.PI * this.#radius;
-
     }
     #draw(angle){
-        // const length1 = Math.random() * 10 + 10;
-        // const length2 = Math.random() * 10 + 10;
         this.#ctx.rotate(angle);
         this.#ctx.beginPath();
         this.#ctx.moveTo(0,0);
-        this.#ctx.lineTo(5, 0);
+        this.#ctx.lineTo(100, 0);
         this.#ctx.stroke();
     }
 }
