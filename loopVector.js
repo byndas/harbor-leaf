@@ -1,10 +1,10 @@
 window.onload = function(){
     const canvas = document.getElementById('loopVector');
-    const ctx = canvas.getContext('2d');
+    const ctxLooper = canvas.getContext('2d');
     
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    const flowField = new FlowFieldEffect(ctx, canvas.width, canvas.height);
+    const flowField = new FlowFieldEffect(ctxLooper, canvas.width, canvas.height);
 }
 
 class FlowFieldEffect {
@@ -12,8 +12,8 @@ class FlowFieldEffect {
     #width;
     #height;
     #radius;
-    constructor(ctx, width, height) {
-        this.#ctx = ctx;
+    constructor(ctxLooper, width, height) {
+        this.#ctx = ctxLooper;
         this.#ctx.lineWidth = .25;
         this.#width = width;
         this.#height = height;

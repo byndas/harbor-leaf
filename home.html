@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="navBtns.css">
     <link rel="stylesheet" href="sky.css">
 
-    <script src="bubblers.js"></script>
     <script src="particleVector.js" async defer></script>
     <script src="loopVector.js" async defer></script>
 
@@ -21,29 +20,12 @@
     <!-- <script src="/effects/lavaOnRippleButtons/lava.js" async defer></script> -->
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <script type="module">
-        import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
 
-        const swiper = new Swiper('.swiper', {
-        direction: 'vertical',
-        effect:'creative',
-        /* 'cube' | 'fade' | 'coverflow' | 'flip' | 'creative' | 'cards' */
-        roundLengths: true,
-        });
-        const navAboutBtn = document.getElementById('navAbout');
-        const navProjectsBtn = document.getElementById('navProjects');
-        const navContactBtn = document.getElementById('navContact');
-
-        navAboutBtn.addEventListener('click', () => swiper.slideTo(0));
-        navProjectsBtn.addEventListener('click', () => swiper.slideTo(1));
-        navContactBtn.addEventListener('click', () => swiper.slideTo(2));
-        
-</script>
 </head>
 
 <body>
     <nav>
-        <button class="ripple" id="navAbout" click="swiper.slideTo(0)">
+        <button class="ripple" id="navAbout">
             <span></span>
             <span></span>
             <span></span>
@@ -57,7 +39,7 @@
             <span></span>
             <p>ABOUT</p>
         </button>
-        <button class="ripple" id="navProjects" click="swiper.slideTo(1)">
+        <button class="ripple" id="navProjects">
             <span></span>
             <span></span>
             <span></span>
@@ -71,7 +53,7 @@
             <span></span>
             <p>PROJECTS</p>
         </button>
-        <button class="ripple" id="navContact" click="swiper.slideTo(2)">
+        <button class="ripple" id="navContact">
             <span></span>
             <span></span>
             <span></span>
@@ -143,5 +125,23 @@
         </svg>
     </footer>
 </body>
+<script src="bubblers.js"></script>
+<script type="module">
+    import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+
+        const swiper = new Swiper('.swiper', {
+        direction: 'vertical',
+        effect:'creative',
+        /* 'cube' | 'fade' | 'coverflow' | 'flip' | 'creative' | 'cards' */
+        roundLengths: true,
+        });
+        const navAboutBtn = document.getElementById('navAbout');
+        const navProjectsBtn = document.getElementById('navProjects');
+        const navContactBtn = document.getElementById('navContact');
+
+        navAboutBtn.addEventListener('click', () => swiper.slideTo(0));
+        navProjectsBtn.addEventListener('click', () => swiper.slideTo(1));
+        navContactBtn.addEventListener('click', () => swiper.slideTo(2));
+</script>
 
 </html>
