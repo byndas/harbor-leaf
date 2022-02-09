@@ -17,16 +17,16 @@ let bgBubbles = [];
 
 function addBubble() {
     // bubbles.push(new Bubble('#86282e', 1.8));
-    bubbles.push(new Bubble('silver', 1));
+    bubbles.push(new Bubble('silver', 2));
 
 }
 function addBgBubble() {
     // bgBubbles.push(new Bubble('orangered', 2.5));
-    bgBubbles.push(new Bubble('snow', 2.5));
+    bgBubbles.push(new Bubble('snow', 2));
 }
 class Bubble {
     constructor(color, ySpeed) {
-        this.radius = (Math.random() * 50);
+        this.radius = (Math.random() * 5);
         this.life = true;
         this.x = (Math.random() * window.innerWidth);
         this.y = (Math.random() * 0.2) + window.innerHeight + this.radius;
@@ -41,16 +41,16 @@ class Bubble {
         this.vr += 0.0001;
         this.y -= this.vy;
         this.x += this.vx;
-        if (this.radius > 1) {
-            this.radius -= this.vr;
-        }
-        if (this.radius <= 1) {
-            this.life = false;
-        }
+        // if (this.radius > 1) {
+        //     this.radius -= this.vr;
+        // }
+        // if (this.radius <= 1) {
+        //     this.life = false;
+        // }
     }
     draw(currentCanvas) {
         currentCanvas.beginPath();
-        currentCanvas.arc(this.x, this.y, this.radius, 0, 2 * Math.PI)
+        currentCanvas.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
         currentCanvas.fillStyle = this.color;
         currentCanvas.fill();
     }
@@ -68,17 +68,17 @@ function handleBubbles() {
             bgBubbles.splice(i, 1);
         }
     }
-    if (bubbles.length < (window.innerWidth / 4)) {
+    if (bubbles.length < window.innerWidth) {
         addBubble();
     }
-    if (bgBubbles.length < (window.innerWidth / 12)) {
+    if (bgBubbles.length < window.innerWidth) {
         addBgBubble();
     }
 }
 
 function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctxBg.clearRect(0, 0, canvas.width, canvas.height);
+    // ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // ctxBg.clearRect(0, 0, canvas.width, canvas.height);
     
     handleBubbles();
 
