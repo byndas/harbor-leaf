@@ -94,11 +94,11 @@ function animate() {
 
 window.addEventListener('load', animate);
 
-window.addEventListener('resize', function() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    canvasBg.width = window.innerWidth;
-    canvasBg.height = window.innerHeight;
-    bubbles = [];
-    bgBubbles = [];
-});
+// window.addEventListener('resize', function() {
+//     canvas.width = window.innerWidth;
+//     canvas.height = window.innerHeight;
+//     canvasBg.width = window.innerWidth;
+//     canvasBg.height = window.innerHeight;
+//     bubbles = [];
+//     bgBubbles = [];
+// });
