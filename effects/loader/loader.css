@@ -35,36 +35,131 @@ body {
     z-index: 0;
 }
 
-.shadowLoader1 {
-    top: 45vh;
-    left: 45vw;
-}
-
 .loader1 {
     top: 50vh;
     left: 50vw;
 }
 
-.shadowLoader2 {
+.shadowLoader1A {
+    top: 45vh;
+    left: 45vw;
+}
+
+.shadowLoader1B {
     top: 55vh;
     left: 55vw;
 }
 
-.shadowLoader3 {
+.shadowLoader1C {
     top: 45vh;
     left: 55vw;
 }
 
-.shadowLoader4 {
+.shadowLoader1D {
     top: 55vh;
     left: 45vw;
 }
 
+.loader2 {
+    top: 25vh;
+    left: 25vw;
+}
+
+.shadowLoader2A {
+    top: 20vh;
+    left: 20vw;
+}
+
+.shadowLoader2B {
+    top: 30vh;
+    left: 30vw;
+}
+
+.shadowLoader2C {
+    top: 20vh;
+    left: 30vw;
+}
+
+.shadowLoader2D {
+    top: 30vh;
+    left: 20vw;
+}
+
+.loader3 {
+    top: 75vh;
+    left: 75vw;
+}
+
+.shadowLoader3A {
+    top: 70vh;
+    left: 70vw;
+}
+
+.shadowLoader3B {
+    top: 80vh;
+    left: 80vw;
+}
+
+.shadowLoader3C {
+    top: 70vh;
+    left: 80vw;
+}
+
+.shadowLoader3D {
+    top: 80vh;
+    left: 70vw;
+}
 
 
+.loader4 {
+    top: 25vh;
+    left: 75vw;
+}
 
+.shadowLoader4A {
+    top: 20vh;
+    left: 70vw;
+}
 
+.shadowLoader4B {
+    top: 30vh;
+    left: 80vw;
+}
 
+.shadowLoader4C {
+    top: 20vh;
+    left: 80vw;
+}
+
+.shadowLoader4D {
+    top: 30vh;
+    left: 70vw;
+}
+
+.loader5 {
+    top: 75vh;
+    left: 25vw;
+}
+
+.shadowLoader5A {
+    top: 70vh;
+    left: 20vw;
+}
+
+.shadowLoader5B {
+    top: 80vh;
+    left: 30vw;
+}
+
+.shadowLoader5C {
+    top: 70vh;
+    left: 30vw;
+}
+
+.shadowLoader5D {
+    top: 80vh;
+    left: 20vw;
+}
 
 @keyframes rotate {
     from {
