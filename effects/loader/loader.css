@@ -37,111 +37,116 @@ body {
 
 .loader {
     top: 217.5%;
-    left: 50%;
+    left: -5%;
 }
 
 .shadowLoader {
-    top: 222.5%;
-    left: 55%;
+    top: 217.5%;
+    left: 0%;
 }
 
 .loader2 {
-    top: 30%;
-    left: 10%;
+    top: 217.5%;
+    left: 5%;
 }
 
 .shadowLoader2 {
-    top: 35%;
-    left: 15%;
+    top: 217.5%;
+    left: 10%;
 }
 
 .loader3 {
-    top: 40%;
-    left: 20%;
+    top: 217.5%;
+    left: 15%;
 }
 
 .shadowLoader3 {
-    top: 45%;
-    left: 25%;
+    top: 217.5%;
+    left: 20%;
 }
 
 .loader4 {
-    top: 50%;
-    left: 30%;
+    top: 217.5%;
+    left: 25%;
 }
 
 .shadowLoader4 {
-    top: 55%;
-    left: 35%;
+    top: 217.5%;
+    left: 30%;
 }
 
 .loader5 {
-    top: 60%;
-    left: 40%;
+    top: 217.5%;
+    left: 35%;
 }
 
 .shadowLoader5 {
-    top: 65%;
-    left: 45%;
+    top: 217.5%;
+    left: 40%;
 }
 
 .loader6 {
-    top: 70%;
-    left: 50%;
+    top: 217.5%;
+    left: 45%;
 }
 
 .shadowLoader6 {
-    top: 75%;
-    left: 55%;
+    top: 217.5%;
+    left: 50%;
 }
 
 .loader7 {
-    top: 80%;
-    left: 60%;
+    top: 217.5%;
+    left: 55%;
 }
 
 .shadowLoader7 {
-    top: 85%;
-    left: 65%;
+    top: 217.5%;
+    left: 60%;
 }
 
 .loader8 {
-    top: 90%;
-    left: 70%;
+    top: 217.5%;
+    left: 65%;
 }
 
 .shadowLoader8 {
-    top: 95%;
-    left: 75%;
+    top: 217.5%;
+    left: 70%;
 }
 
 .loader9 {
-    top: 100%;
-    left: 80%;
+    top: 217.5%;
+    left: 75%;
 }
 
 .shadowLoader9 {
-    top: 105%;
-    left: 85%;
+    top: 217.5%;
+    left: 80%;
 }
 
 .loader10 {
-    top: 110%;
-    left: 90%;
+    top: 217.5%;
+    left: 85%;
 }
 
 .shadowLoader10 {
-    top: 115%;
-    left: 95%;
+    top: 217.5%;
+    left: 90%;
 }
 
 .loader11 {
-    top: 120%;
-    left: 100%;
+    top: 217.5%;
+    left: 95%;
 }
 
 .shadowLoader11 {
-    top: 125%;
+    top: 217.5%;
+    left: 100%;
+}
+
+.loader12 {
+    top: 217.5%;
     left: 105%;
 }
 
