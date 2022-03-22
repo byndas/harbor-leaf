@@ -16,346 +16,37 @@ body {
     filter: url('#goo');
 }
 
+.common {
+    position: absolute;
+    display: flex;
+    animation: rotate 20s linear infinite;
+}
+
+.color1 {
+    /* only works because position is absolute */
+    transform: translate(-50%, -50%) rotate(0deg);
+    /* amazing filter effects! */
+    filter: blur(1px) contrast(15);
+    z-index: 10;
+}
+
+.color2 {
+    /* filter: blur(20px) contrast(10); */
+    z-index: 0;
+}
+
 .loader {
-    position: absolute;
-    display: flex;
-    padding: 100px;
-    align-items: center;
-    /* background: #fff; */
-    top: 20%;
-    bottom: 20%;
-    left: 0%;
-    /* only works because position is absolute */
-    transform: translate(-50%, -50%) rotate(0deg);
-    animation: rotate 20s linear infinite;
-    /* amazing filter effects! */
-    filter: blur(1px) contrast(15);
-    z-index: 10;
-}
-
-.shadowLoader {
-    position: absolute;
-    display: flex;
-    padding: 0px;
-    align-items: center;
-    background: transparent;
-    top: 25%;
-    bottom: 25%;
-    left: 5%;
-    animation: rotate 20s linear infinite;
-    /* filter: blur(20px) contrast(10); */
-    z-index: 0;
-}
-
-.loader2 {
-    position: absolute;
-    display: flex;
-    padding: 100px;
-    align-items: center;
-    /* background: #fff; */
-    top: 30%;
-    bottom: 30%;
-    left: 10%;
-    /* only works because position is absolute */
-    transform: translate(-50%, -50%) rotate(0deg);
-    animation: rotate 20s linear infinite;
-    /* amazing filter effects! */
-    filter: blur(1px) contrast(15);
-    z-index: 10;
-}
-
-.shadowLoader2 {
-    position: absolute;
-    display: flex;
-    padding: 0px;
-    align-items: center;
-    background: transparent;
-    top: 35%;
-    bottom: 35%;
-    left: 15%;
-    animation: rotate 20s linear infinite;
-    /* filter: blur(20px) contrast(10); */
-    z-index: 0;
-}
-
-.loader3 {
-    position: absolute;
-    display: flex;
-    padding: 100px;
-    align-items: center;
-    /* background: #fff; */
-    top: 40%;
-    bottom: 40%;
-    left: 20%;
-    /* only works because position is absolute */
-    transform: translate(-50%, -50%) rotate(0deg);
-    animation: rotate 20s linear infinite;
-    /* amazing filter effects! */
-    filter: blur(1px) contrast(15);
-    z-index: 10;
-}
-
-.shadowLoader3 {
-    position: absolute;
-    display: flex;
-    padding: 0px;
-    align-items: center;
-    background: transparent;
-    top: 45%;
-    bottom: 45%;
-    left: 25%;
-    animation: rotate 20s linear infinite;
-    /* filter: blur(20px) contrast(10); */
-    z-index: 0;
-}
-
-.loader4 {
-    position: absolute;
-    display: flex;
-    padding: 100px;
-    align-items: center;
-    /* background: #fff; */
-    top: 50%;
-    bottom: 50%;
-    left: 30%;
-    /* only works because position is absolute */
-    transform: translate(-50%, -50%) rotate(0deg);
-    animation: rotate 20s linear infinite;
-    /* amazing filter effects! */
-    filter: blur(1px) contrast(15);
-    z-index: 10;
-}
-
-.shadowLoader4 {
-    position: absolute;
-    display: flex;
-    padding: 0px;
-    align-items: center;
-    background: transparent;
-    top: 55%;
-    bottom: 55%;
-    left: 35%;
-    animation: rotate 20s linear infinite;
-    /* filter: blur(20px) contrast(10); */
-    z-index: 0;
-}
-
-.loader5 {
-    position: absolute;
-    display: flex;
-    padding: 100px;
-    align-items: center;
-    /* background: #fff; */
-    top: 60%;
-    bottom: 60%;
-    left: 40%;
-    /* only works because position is absolute */
-    transform: translate(-50%, -50%) rotate(0deg);
-    animation: rotate 20s linear infinite;
-    /* amazing filter effects! */
-    filter: blur(1px) contrast(15);
-    z-index: 10;
-}
-
-.shadowLoader5 {
-    position: absolute;
-    display: flex;
-    padding: 0px;
-    align-items: center;
-    background: transparent;
-    top: 65%;
-    bottom: 65%;
-    left: 45%;
-    animation: rotate 20s linear infinite;
-    /* filter: blur(20px) contrast(10); */
-    z-index: 0;
-}
-
-.loader6 {
-    position: absolute;
-    display: flex;
-    padding: 100px;
-    align-items: center;
-    /* background: #fff; */
-    top: 70%;
-    bottom: 70%;
+    top: 217.5%;
     left: 50%;
-    /* only works because position is absolute */
-    transform: translate(-50%, -50%) rotate(0deg);
-    animation: rotate 20s linear infinite;
-    /* amazing filter effects! */
-    filter: blur(1px) contrast(15);
-    z-index: 10;
-}
-
-.shadowLoader6 {
-    position: absolute;
-    display: flex;
-    padding: 0px;
-    align-items: center;
-    background: transparent;
-    top: 75%;
-    bottom: 75%;
-    left: 55%;
-    animation: rotate 20s linear infinite;
-    /* filter: blur(20px) contrast(10); */
-    z-index: 0;
-}
-
-.loader7 {
-    position: absolute;
-    display: flex;
-    padding: 100px;
-    align-items: center;
-    /* background: #fff; */
-    top: 80%;
-    bottom: 80%;
-    left: 60%;
-    /* only works because position is absolute */
-    transform: translate(-50%, -50%) rotate(0deg);
-    animation: rotate 20s linear infinite;
-    /* amazing filter effects! */
-    filter: blur(1px) contrast(15);
-    z-index: 10;
-}
-
-.shadowLoader7 {
-    position: absolute;
-    display: flex;
-    padding: 0px;
-    align-items: center;
-    background: transparent;
-    top: 85%;
-    bottom: 85%;
-    left: 65%;
-    animation: rotate 20s linear infinite;
-    /* filter: blur(20px) contrast(10); */
-    z-index: 0;
-}
-
-.loader8 {
-    position: absolute;
-    display: flex;
-    padding: 100px;
-    align-items: center;
-    /* background: #fff; */
-    top: 90%;
-    bottom: 90%;
-    left: 70%;
-    /* only works because position is absolute */
-    transform: translate(-50%, -50%) rotate(0deg);
-    animation: rotate 20s linear infinite;
-    /* amazing filter effects! */
-    filter: blur(1px) contrast(15);
-    z-index: 10;
-}
-
-.shadowLoader8 {
-    position: absolute;
-    display: flex;
-    padding: 0px;
-    align-items: center;
-    background: transparent;
-    top: 95%;
-    bottom: 95%;
-    left: 75%;
-    animation: rotate 20s linear infinite;
-    /* filter: blur(20px) contrast(10); */
-    z-index: 0;
-}
-
-.loader9 {
-    position: absolute;
-    display: flex;
-    padding: 100px;
-    align-items: center;
-    /* background: #fff; */
-    top: 100%;
-    bottom: 100%;
-    left: 80%;
-    /* only works because position is absolute */
-    transform: translate(-50%, -50%) rotate(0deg);
-    animation: rotate 20s linear infinite;
-    /* amazing filter effects! */
-    filter: blur(1px) contrast(15);
-    z-index: 10;
-}
-
-.shadowLoader9 {
-    position: absolute;
-    display: flex;
-    padding: 0px;
-    align-items: center;
-    background: transparent;
-    top: 105%;
-    bottom: 105%;
-    left: 85%;
-    animation: rotate 20s linear infinite;
-    /* filter: blur(20px) contrast(10); */
-    z-index: 0;
-}
-
-.loader10 {
-    position: absolute;
-    display: flex;
-    padding: 100px;
-    align-items: center;
-    /* background: #fff; */
-    top: 110%;
-    bottom: 110%;
-    left: 90%;
-    /* only works because position is absolute */
-    transform: translate(-50%, -50%) rotate(0deg);
-    animation: rotate 20s linear infinite;
-    /* amazing filter effects! */
-    filter: blur(1px) contrast(15);
-    z-index: 10;
-}
-
-.shadowLoader10 {
-    position: absolute;
-    display: flex;
-    padding: 0px;
-    align-items: center;
-    background: transparent;
-    top: 115%;
-    bottom: 115%;
-    left: 95%;
-    animation: rotate 20s linear infinite;
-    /* filter: blur(20px) contrast(10); */
-    z-index: 0;
-}
-
-.loader11 {
-    position: absolute;
-    display: flex;
-    padding: 100px;
-    align-items: center;
-    /* background: #fff; */
-    top: 120%;
-    bottom: 120%;
-    left: 100%;
-    /* only works because position is absolute */
-    transform: translate(-50%, -50%) rotate(0deg);
-    animation: rotate 20s linear infinite;
-    /* amazing filter effects! */
-    filter: blur(1px) contrast(15);
-    z-index: 10;
 }
 
 .shadowLoader {
-    position: absolute;
-    display: flex;
-    padding: 0px;
-    align-items: center;
-    background: transparent;
-    top: 125%;
-    bottom: 125%;
-    left: 105%;
-    animation: rotate 20s linear infinite;
-    /* filter: blur(20px) contrast(10); */
-    z-index: 0;
+    top: 222.5%;
+    left: 55%;
 }
+
+
+
 
 @keyframes rotate {
     from {
