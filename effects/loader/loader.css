@@ -78,7 +78,7 @@ body {
     z-index: 0;
 }
 
-.loader {
+.loader3 {
     position: absolute;
     display: flex;
     padding: 100px;
@@ -95,7 +95,7 @@ body {
     z-index: 10;
 }
 
-.shadowLoader {
+.shadowLoader3 {
     position: absolute;
     display: flex;
     padding: 0px;
@@ -109,7 +109,7 @@ body {
     z-index: 0;
 }
 
-.loader {
+.loader4 {
     position: absolute;
     display: flex;
     padding: 100px;
@@ -126,7 +126,7 @@ body {
     z-index: 10;
 }
 
-.shadowLoader {
+.shadowLoader4 {
     position: absolute;
     display: flex;
     padding: 0px;
@@ -140,7 +140,7 @@ body {
     z-index: 0;
 }
 
-.loader {
+.loader5 {
     position: absolute;
     display: flex;
     padding: 100px;
@@ -157,7 +157,7 @@ body {
     z-index: 10;
 }
 
-.shadowLoader {
+.shadowLoader5 {
     position: absolute;
     display: flex;
     padding: 0px;
@@ -171,7 +171,7 @@ body {
     z-index: 0;
 }
 
-.loader {
+.loader6 {
     position: absolute;
     display: flex;
     padding: 100px;
@@ -188,7 +188,7 @@ body {
     z-index: 10;
 }
 
-.shadowLoader {
+.shadowLoader6 {
     position: absolute;
     display: flex;
     padding: 0px;
