@@ -36,27 +36,27 @@ body {
 }
 
 .loader1 {
-    top: 50vh;
+    top: 25vh;
     left: 50vw;
 }
 
 .shadowLoader1A {
-    top: 45vh;
+    top: 25vh;
     left: 45vw;
 }
 
 .shadowLoader1B {
-    top: 55vh;
+    top: 25vh;
     left: 55vw;
 }
 
 .shadowLoader1C {
-    top: 45vh;
+    top: 25vh;
     left: 55vw;
 }
 
 .shadowLoader1D {
-    top: 55vh;
+    top: 25vh;
     left: 45vw;
 }
 
@@ -159,6 +159,32 @@ body {
 .shadowLoader5D {
     top: 80vh;
     left: 20vw;
+}
+
+
+.loader6 {
+    top: 75vh;
+    left: 50vw;
+}
+
+.shadowLoader6A {
+    top: 75vh;
+    left: 45vw;
+}
+
+.shadowLoader6B {
+    top: 75vh;
+    left: 55vw;
+}
+
+.shadowLoader6C {
+    top: 75vh;
+    left: 55vw;
+}
+
+.shadowLoader6D {
+    top: 75vh;
+    left: 45vw;
 }
 
 @keyframes rotate {
