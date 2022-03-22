@@ -22,9 +22,9 @@ body {
     padding: 100px;
     align-items: center;
     /* background: #fff; */
-    top: 50%;
-    bottom: 50%;
-    left: 20%;
+    top: 20%;
+    bottom: 20%;
+    left: 0%;
     /* only works because position is absolute */
     transform: translate(-50%, -50%) rotate(0deg);
     animation: rotate 20s linear infinite;
@@ -39,9 +39,9 @@ body {
     padding: 0px;
     align-items: center;
     background: transparent;
-    top: 55%;
-    bottom: 50%;
-    left: 25%;
+    top: 25%;
+    bottom: 25%;
+    left: 5%;
     animation: rotate 20s linear infinite;
     /* filter: blur(20px) contrast(10); */
     z-index: 0;
@@ -53,9 +53,9 @@ body {
     padding: 100px;
     align-items: center;
     /* background: #fff; */
-    top: 60%;
-    bottom: 55%;
-    left: 30%;
+    top: 30%;
+    bottom: 30%;
+    left: 10%;
     /* only works because position is absolute */
     transform: translate(-50%, -50%) rotate(0deg);
     animation: rotate 20s linear infinite;
@@ -70,8 +70,8 @@ body {
     padding: 0px;
     align-items: center;
     background: transparent;
-    top: 45%;
-    bottom: 45%;
+    top: 35%;
+    bottom: 35%;
     left: 15%;
     animation: rotate 20s linear infinite;
     /* filter: blur(20px) contrast(10); */
@@ -84,8 +84,8 @@ body {
     padding: 100px;
     align-items: center;
     /* background: #fff; */
-    top: 50%;
-    bottom: 50%;
+    top: 40%;
+    bottom: 40%;
     left: 20%;
     /* only works because position is absolute */
     transform: translate(-50%, -50%) rotate(0deg);
@@ -101,8 +101,8 @@ body {
     padding: 0px;
     align-items: center;
     background: transparent;
-    top: 55%;
-    bottom: 50%;
+    top: 45%;
+    bottom: 45%;
     left: 25%;
     animation: rotate 20s linear infinite;
     /* filter: blur(20px) contrast(10); */
@@ -117,7 +117,7 @@ body {
     /* background: #fff; */
     top: 50%;
     bottom: 50%;
-    left: 20%;
+    left: 30%;
     /* only works because position is absolute */
     transform: translate(-50%, -50%) rotate(0deg);
     animation: rotate 20s linear infinite;
@@ -133,8 +133,8 @@ body {
     align-items: center;
     background: transparent;
     top: 55%;
-    bottom: 50%;
-    left: 25%;
+    bottom: 55%;
+    left: 35%;
     animation: rotate 20s linear infinite;
     /* filter: blur(20px) contrast(10); */
     z-index: 0;
@@ -146,9 +146,9 @@ body {
     padding: 100px;
     align-items: center;
     /* background: #fff; */
-    top: 50%;
-    bottom: 50%;
-    left: 20%;
+    top: 60%;
+    bottom: 60%;
+    left: 40%;
     /* only works because position is absolute */
     transform: translate(-50%, -50%) rotate(0deg);
     animation: rotate 20s linear infinite;
@@ -163,9 +163,9 @@ body {
     padding: 0px;
     align-items: center;
     background: transparent;
-    top: 55%;
-    bottom: 50%;
-    left: 25%;
+    top: 65%;
+    bottom: 65%;
+    left: 45%;
     animation: rotate 20s linear infinite;
     /* filter: blur(20px) contrast(10); */
     z-index: 0;
@@ -177,9 +177,9 @@ body {
     padding: 100px;
     align-items: center;
     /* background: #fff; */
-    top: 50%;
-    bottom: 50%;
-    left: 20%;
+    top: 70%;
+    bottom: 70%;
+    left: 50%;
     /* only works because position is absolute */
     transform: translate(-50%, -50%) rotate(0deg);
     animation: rotate 20s linear infinite;
@@ -194,9 +194,164 @@ body {
     padding: 0px;
     align-items: center;
     background: transparent;
-    top: 55%;
-    bottom: 50%;
-    left: 25%;
+    top: 75%;
+    bottom: 75%;
+    left: 55%;
+    animation: rotate 20s linear infinite;
+    /* filter: blur(20px) contrast(10); */
+    z-index: 0;
+}
+
+.loader7 {
+    position: absolute;
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    /* background: #fff; */
+    top: 80%;
+    bottom: 80%;
+    left: 60%;
+    /* only works because position is absolute */
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: rotate 20s linear infinite;
+    /* amazing filter effects! */
+    filter: blur(1px) contrast(15);
+    z-index: 10;
+}
+
+.shadowLoader7 {
+    position: absolute;
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    background: transparent;
+    top: 85%;
+    bottom: 85%;
+    left: 65%;
+    animation: rotate 20s linear infinite;
+    /* filter: blur(20px) contrast(10); */
+    z-index: 0;
+}
+
+.loader8 {
+    position: absolute;
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    /* background: #fff; */
+    top: 90%;
+    bottom: 90%;
+    left: 70%;
+    /* only works because position is absolute */
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: rotate 20s linear infinite;
+    /* amazing filter effects! */
+    filter: blur(1px) contrast(15);
+    z-index: 10;
+}
+
+.shadowLoader8 {
+    position: absolute;
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    background: transparent;
+    top: 95%;
+    bottom: 95%;
+    left: 75%;
+    animation: rotate 20s linear infinite;
+    /* filter: blur(20px) contrast(10); */
+    z-index: 0;
+}
+
+.loader9 {
+    position: absolute;
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    /* background: #fff; */
+    top: 100%;
+    bottom: 100%;
+    left: 80%;
+    /* only works because position is absolute */
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: rotate 20s linear infinite;
+    /* amazing filter effects! */
+    filter: blur(1px) contrast(15);
+    z-index: 10;
+}
+
+.shadowLoader9 {
+    position: absolute;
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    background: transparent;
+    top: 105%;
+    bottom: 105%;
+    left: 85%;
+    animation: rotate 20s linear infinite;
+    /* filter: blur(20px) contrast(10); */
+    z-index: 0;
+}
+
+.loader10 {
+    position: absolute;
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    /* background: #fff; */
+    top: 110%;
+    bottom: 110%;
+    left: 90%;
+    /* only works because position is absolute */
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: rotate 20s linear infinite;
+    /* amazing filter effects! */
+    filter: blur(1px) contrast(15);
+    z-index: 10;
+}
+
+.shadowLoader10 {
+    position: absolute;
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    background: transparent;
+    top: 115%;
+    bottom: 115%;
+    left: 95%;
+    animation: rotate 20s linear infinite;
+    /* filter: blur(20px) contrast(10); */
+    z-index: 0;
+}
+
+.loader11 {
+    position: absolute;
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    /* background: #fff; */
+    top: 120%;
+    bottom: 120%;
+    left: 100%;
+    /* only works because position is absolute */
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: rotate 20s linear infinite;
+    /* amazing filter effects! */
+    filter: blur(1px) contrast(15);
+    z-index: 10;
+}
+
+.shadowLoader {
+    position: absolute;
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    background: transparent;
+    top: 125%;
+    bottom: 125%;
+    left: 105%;
     animation: rotate 20s linear infinite;
     /* filter: blur(20px) contrast(10); */
     z-index: 0;
