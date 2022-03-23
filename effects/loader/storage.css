@@ -1,24 +1,226 @@
 .loader1 {
-    top: 50vh;
+    top: 25vh;
     left: 50vw;
 }
 
 .shadowLoader1A {
-    top: 45vh;
+    top: 20vh;
     left: 45vw;
 }
 
 .shadowLoader1B {
-    top: 55vh;
+    top: 20vh;
     left: 55vw;
 }
 
 .shadowLoader1C {
-    top: 45vh;
+    top: 30vh;
     left: 55vw;
 }
 
 .shadowLoader1D {
+    top: 30vh;
+    left: 45vw;
+}
+
+.loader2 {
+    top: 25vh;
+    left: 25vw;
+}
+
+.shadowLoader2A {
+    top: 20vh;
+    left: 20vw;
+}
+
+.shadowLoader2B {
+    top: 30vh;
+    left: 30vw;
+}
+
+.shadowLoader2C {
+    top: 20vh;
+    left: 30vw;
+}
+
+.shadowLoader2D {
+    top: 30vh;
+    left: 20vw;
+}
+
+.loader3 {
+    top: 75vh;
+    left: 75vw;
+}
+
+.shadowLoader3A {
+    top: 70vh;
+    left: 70vw;
+}
+
+.shadowLoader3B {
+    top: 80vh;
+    left: 80vw;
+}
+
+.shadowLoader3C {
+    top: 70vh;
+    left: 80vw;
+}
+
+.shadowLoader3D {
+    top: 80vh;
+    left: 70vw;
+}
+
+
+.loader4 {
+    top: 25vh;
+    left: 75vw;
+}
+
+.shadowLoader4A {
+    top: 20vh;
+    left: 70vw;
+}
+
+.shadowLoader4B {
+    top: 30vh;
+    left: 80vw;
+}
+
+.shadowLoader4C {
+    top: 20vh;
+    left: 80vw;
+}
+
+.shadowLoader4D {
+    top: 30vh;
+    left: 70vw;
+}
+
+.loader5 {
+    top: 75vh;
+    left: 25vw;
+}
+
+.shadowLoader5A {
+    top: 70vh;
+    left: 20vw;
+}
+
+.shadowLoader5B {
+    top: 80vh;
+    left: 30vw;
+}
+
+.shadowLoader5C {
+    top: 70vh;
+    left: 30vw;
+}
+
+.shadowLoader5D {
+    top: 80vh;
+    left: 20vw;
+}
+
+
+.loader6 {
+    top: 75vh;
+    left: 50vw;
+}
+
+.shadowLoader6A {
+    top: 70vh;
+    left: 45vw;
+}
+
+.shadowLoader6B {
+    top: 80vh;
+    left: 55vw;
+}
+
+.shadowLoader6C {
+    top: 70vh;
+    left: 55vw;
+}
+
+.shadowLoader6D {
+    top: 80vh;
+    left: 45vw;
+}
+
+.loader7 {
+    top: 50vh;
+    left: 25vw;
+}
+
+.shadowLoader7A {
+    top: 45vh;
+    left: 20vw;
+}
+
+.shadowLoader7B {
+    top: 55vh;
+    left: 30vw;
+}
+
+.shadowLoader7C {
+    top: 55vh;
+    left: 20vw;
+}
+
+.shadowLoader7D {
+    top: 45vh;
+    left: 30vw;
+}
+
+.loader8 {
+    top: 50vh;
+    left: 50vw;
+}
+
+.shadowLoader8A {
+    top: 45vh;
+    left: 45vw;
+}
+
+.shadowLoader8B {
+    top: 55vh;
+    left: 55vw;
+}
+
+.shadowLoader8C {
     top: 55vh;
     left: 45vw;
+}
+
+.shadowLoader8D {
+    top: 45vh;
+    left: 55vw;
+}
+
+.loader9 {
+    top: 50vh;
+    left: 75vw;
+}
+
+.shadowLoader9A {
+    top: 45vh;
+    left: 70vw;
+}
+
+.shadowLoader9B {
+    top: 55vh;
+    left: 80vw;
+}
+
+.shadowLoader9C {
+    top: 55vh;
+    left: 70vw;
+}
+
+.shadowLoader9D {
+    top: 45vh;
+    left: 80vw;
 }

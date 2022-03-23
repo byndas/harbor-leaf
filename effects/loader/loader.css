@@ -17,7 +17,7 @@ body {
 }
 
 .common {
-    opacity: 1;
+    opacity: .75;
     position: absolute;
     display: flex;
     animation: rotate 20s linear infinite;
@@ -25,7 +25,7 @@ body {
 
 .color1 {
     /* only works because position is absolute */
-    transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(0%, 0%) rotate(0deg);
     /* amazing filter effects! */
     filter: blur(1px) contrast(15);
     z-index: 5;
@@ -277,9 +277,9 @@ body {
     background-color: firebrick;
     /* background-color: #000; */
     /* background-color: cornsilk; */
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+    height: 2.5vh;
+    width: 2.5vw;
+    border-radius: 25%;
     z-index: 2;
 }
 
@@ -294,7 +294,7 @@ body {
 .particle:nth-child(5),
 .particle:nth-child(7),
 .particle:nth-child(9) {
-    /* animation: pulse 10s ease-in-out infinite; */
+    animation: pulse 5s ease-in-out infinite;
 }
 
 @keyframes pulse {
@@ -316,7 +316,7 @@ body {
 }
 
 .leftSpin {
-    /* animation: leftSpin 1.5s linear infinite; */
+    animation: leftSpin 6.7s infinite;
 }
 
 @keyframes leftSpin {
@@ -330,16 +330,16 @@ body {
 }
 
 .rightSpin {
-    /* animation: rightSpin 1.5s linear infinite; */
+    animation: rightSpin 23.4s linear infinite;
 }
 
 @keyframes rightSpin {
     from {
-        transform: rotate(360deg) translateX(1.25vw)
+        transform: rotate(360deg) translateX(1.75vw)
     }
 
     to {
-        transform: rotate(0deg) translateX(50px)
+        transform: rotate(0deg) translateX(1.75vh)
     }
 }
 
