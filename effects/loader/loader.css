@@ -17,31 +17,6 @@ body {
     filter: url('#goo');
 }
 
-.common {
-    opacity: 1;
-    position: absolute;
-    display: flex;
-    animation: rotate 20s linear infinite;
-}
-
-.color1 {
-    /* only works because position is absolute */
-    /* transform: translate(0%, 0%) rotate(360deg); */
-
-    /* amazing filter effects! */
-    filter: blur(1px) contrast(15);
-    z-index: 5;
-    mix-blend-mode: lighten;
-
-}
-
-.color2 {
-    /* filter: blur(20px) contrast(10); */
-    z-index: 0;
-    mix-blend-mode: lighten;
-
-}
-
 .loader1 {
     top: 25vh;
     left: 25vw;
@@ -52,7 +27,7 @@ body {
     left: 20vw;
 }
 
-.shadowLoader2B {
+.shadowLoader1B {
     top: 30vh;
     left: 30vw;
 }
@@ -268,6 +243,156 @@ body {
     left: 70vw;
 }
 
+.loader10 {
+    top: 25vh;
+    left: 0vw;
+}
+
+.shadowLoader10A {
+    top: 20vh;
+    left: -5vw;
+}
+
+.shadowLoader10B {
+    top: 30vh;
+    left: 5vw;
+}
+
+.shadowLoader10C {
+    top: 20vh;
+    left: 5vw;
+}
+
+.shadowLoader10D {
+    top: 30vh;
+    left: -5vw;
+}
+
+.loader11 {
+    top: 50vh;
+    left: 0vw;
+}
+
+.shadowLoader11A {
+    top: 45vh;
+    left: -5vw;
+}
+
+.shadowLoader11B {
+    top: 55vh;
+    left: 5vw;
+}
+
+.shadowLoader11C {
+    top: 45vh;
+    left: 5vw;
+}
+
+.shadowLoader11D {
+    top: 55vh;
+    left: -5vw;
+}
+
+.loader12 {
+    top: 75vh;
+    left: 0vw;
+}
+
+.shadowLoader12A {
+    top: 70vh;
+    left: -5vw;
+}
+
+.shadowLoader12B {
+    top: 80vh;
+    left: 5vw;
+}
+
+.shadowLoader12C {
+    top: 70vh;
+    left: 5vw;
+}
+
+.shadowLoader12D {
+    top: 80vh;
+    left: -5vw;
+}
+
+.loader13 {
+    top: 25vh;
+    left: 100vw;
+}
+
+.shadowLoader13A {
+    top: 20vh;
+    left: 95vw;
+}
+
+.shadowLoader13B {
+    top: 30vh;
+    left: 105vw;
+}
+
+.shadowLoader13C {
+    top: 20vh;
+    left: 105vw;
+}
+
+.shadowLoader13D {
+    top: 30vh;
+    left: 95vw;
+}
+
+.loader14 {
+    top: 50vh;
+    left: 100vw;
+}
+
+.shadowLoader14A {
+    top: 45vh;
+    left: 95vw;
+}
+
+.shadowLoader14B {
+    top: 55vh;
+    left: 105vw;
+}
+
+.shadowLoader14C {
+    top: 45vh;
+    left: 105vw;
+}
+
+.shadowLoader14D {
+    top: 55vh;
+    left: 95vw;
+}
+
+.loader15 {
+    top: 75vh;
+    left: 100vw;
+}
+
+.shadowLoader15A {
+    top: 70vh;
+    left: 95vw;
+}
+
+.shadowLoader15B {
+    top: 80vh;
+    left: 105vw;
+}
+
+.shadowLoader15C {
+    top: 70vh;
+    left: 105vw;
+}
+
+.shadowLoader15D {
+    top: 80vh;
+    left: 95vw;
+}
+
 /* @keyframes rotate {
     from {
         transform: translate(-50%, -50%) rotate(0deg);
@@ -278,10 +403,33 @@ body {
     }
 } */
 
+.common {
+    opacity: 1;
+    position: absolute;
+    display: flex;
+    animation: rotate 16s linear infinite;
+}
+
+.color1 {
+    /* only works because position is absolute */
+    transform: translate(0%, 0%) rotate(360deg);
+
+    /* amazing filter effects! */
+    filter: blur(1px) contrast(15);
+    z-index: 5;
+    mix-blend-mode: lighten;
+}
+
+.color2 {
+    /* filter: blur(2px) contrast(1); */
+    z-index: 0;
+    mix-blend-mode: lighten;
+}
+
 .particle {
-    /* background-color: firebrick; */
+    background-color: firebrick;
     /* background-color: #000; */
-    background-color: cornsilk;
+    /* background-color: cornsilk; */
 
     height: 2.5vh;
     width: 2.5vw;
@@ -328,11 +476,11 @@ body {
 
 @keyframes leftSpin {
     from {
-        transform: rotate(0deg) translateX(.25vw)
+        transform: rotate(0deg) translateX(-20vw)
     }
 
     to {
-        transform: rotate(360deg) translateX(.25vw)
+        transform: rotate(360deg) translateX(-20vw)
     }
 }
 
@@ -343,11 +491,11 @@ body {
 
 @keyframes rightSpin {
     from {
-        transform: rotate(0deg) translateX(.75vw)
+        transform: rotate(0deg)
     }
 
     to {
-        transform: rotate(360deg) translateX(.75vh)
+        transform: rotate(360deg)
     }
 }
 
