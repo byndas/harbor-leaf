@@ -12,11 +12,12 @@ body {
     /* prevents jumpy animation loop */
     overflow: hidden;
     /* background-color: #ad0170; */
-    background-color: transparent;
+    background-color: peru;
     filter: url('#goo');
 }
 
 .common {
+    opacity: .35;
     position: absolute;
     display: flex;
     animation: rotate 20s linear infinite;
@@ -27,7 +28,7 @@ body {
     transform: translate(-50%, -50%) rotate(0deg);
     /* amazing filter effects! */
     filter: blur(1px) contrast(15);
-    z-index: 10;
+    z-index: 5;
 }
 
 .color2 {
@@ -41,22 +42,22 @@ body {
 }
 
 .shadowLoader1A {
-    top: 25vh;
+    top: 20vh;
     left: 45vw;
 }
 
 .shadowLoader1B {
-    top: 25vh;
+    top: 20vh;
     left: 55vw;
 }
 
 .shadowLoader1C {
-    top: 25vh;
+    top: 30vh;
     left: 55vw;
 }
 
 .shadowLoader1D {
-    top: 25vh;
+    top: 30vh;
     left: 45vw;
 }
 
@@ -168,23 +169,73 @@ body {
 }
 
 .shadowLoader6A {
-    top: 75vh;
+    top: 70vh;
     left: 45vw;
 }
 
 .shadowLoader6B {
-    top: 75vh;
+    top: 80vh;
     left: 55vw;
 }
 
 .shadowLoader6C {
-    top: 75vh;
+    top: 70vh;
     left: 55vw;
 }
 
 .shadowLoader6D {
-    top: 75vh;
+    top: 80vh;
     left: 45vw;
+}
+
+.loader7 {
+    top: 37.5vh;
+    left: 37.5vw;
+}
+
+.shadowLoader7A {
+    top: 32.5vh;
+    left: 32.5vw;
+}
+
+.shadowLoader7B {
+    top: 42.5vh;
+    left: 42.5vw;
+}
+
+.shadowLoader7C {
+    top: 42.5vh;
+    left: 32.5vw;
+}
+
+.shadowLoader7D {
+    top: 32.5vh;
+    left: 42.5vw;
+}
+
+.loader8 {
+    top: 62.5vh;
+    left: 62.5vw;
+}
+
+.shadowLoader8A {
+    top: 57.5vh;
+    left: 57.5vw;
+}
+
+.shadowLoader8B {
+    top: 67.5vh;
+    left: 67.5vw;
+}
+
+.shadowLoader8C {
+    top: 57.5vh;
+    left: 67.5vw;
+}
+
+.shadowLoader8D {
+    top: 67.5vh;
+    left: 57.5vw;
 }
 
 @keyframes rotate {
@@ -201,16 +252,16 @@ body {
     background-color: firebrick;
     /* background-color: #000; */
     /* background-color: cornsilk; */
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+    height: 5vh;
+    width: 5vw;
+    border-radius: 100%;
     z-index: 2;
 }
 
 .particle:first-child,
 .particle:last-child {
-    width: 25px;
-    height: 25px;
+    width: 100px;
+    height: 100px;
 }
 
 .particle:nth-child(1),
@@ -218,7 +269,7 @@ body {
 .particle:nth-child(5),
 .particle:nth-child(7),
 .particle:nth-child(9) {
-    animation: pulse 1.3s ease-in-out infinite;
+    animation: pulse 3s ease-in-out infinite;
 }
 
 @keyframes pulse {
@@ -240,26 +291,26 @@ body {
 }
 
 .leftSpin {
-    animation: leftSpin 2.5s linear infinite;
+    animation: leftSpin 20.5s linear infinite;
 }
 
 @keyframes leftSpin {
     from {
-        transform: rotate(0deg) translateX(50px)
+        transform: rotate(0deg) translateX(1.25vw)
     }
 
     to {
-        transform: rotate(360deg) translateX(50px)
+        transform: rotate(360deg) translateX(1.25vw)
     }
 }
 
 .rightSpin {
-    animation: rightSpin 2.5s linear infinite;
+    animation: rightSpin 20.5s linear infinite;
 }
 
 @keyframes rightSpin {
     from {
-        transform: rotate(360deg) translateX(50px)
+        transform: rotate(360deg) translateX(1.25vw)
     }
 
     to {
