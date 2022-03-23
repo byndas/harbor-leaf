@@ -393,6 +393,131 @@ body {
     left: 95vw;
 }
 
+.loader16 {
+    top: 0vh;
+    left: 0vw;
+}
+
+.shadowLoader16A {
+    top: -5vh;
+    left: -5vw;
+}
+
+.shadowLoader16B {
+    top: 5vh;
+    left: 5vw;
+}
+
+.shadowLoader16C {
+    top: -5vh;
+    left: 5vw;
+}
+
+.shadowLoader16D {
+    top: 5vh;
+    left: -5vw;
+}
+
+.loader17 {
+    top: 0vh;
+    left: 25vw;
+}
+
+.shadowLoader17A {
+    top: -5vh;
+    left: 20vw;
+}
+
+.shadowLoader17B {
+    top: 5vh;
+    left: 30vw;
+}
+
+.shadowLoader17C {
+    top: -5vh;
+    left: 30vw;
+}
+
+.shadowLoader17D {
+    top: 5vh;
+    left: 20vw;
+}
+
+.loader18 {
+    top: 0vh;
+    left: 50vw;
+}
+
+.shadowLoader18A {
+    top: -5vh;
+    left: 45vw;
+}
+
+.shadowLoader18B {
+    top: 5vh;
+    left: 55vw;
+}
+
+.shadowLoader18C {
+    top: -5vh;
+    left: 55vw;
+}
+
+.shadowLoader18D {
+    top: 5vh;
+    left: 45vw;
+}
+
+.loader19 {
+    top: 0vh;
+    left: 75vw;
+}
+
+.shadowLoader19A {
+    top: -5vh;
+    left: 70vw;
+}
+
+.shadowLoader19B {
+    top: 5vh;
+    left: 80vw;
+}
+
+.shadowLoader19C {
+    top: -5vh;
+    left: 80vw;
+}
+
+.shadowLoader19D {
+    top: 5vh;
+    left: 70vw;
+}
+
+.loader20 {
+    top: 0vh;
+    left: 100vw;
+}
+
+.shadowLoader20A {
+    top: -5vh;
+    left: 95vw;
+}
+
+.shadowLoader20B {
+    top: 5vh;
+    left: 105vw;
+}
+
+.shadowLoader20C {
+    top: -5vh;
+    left: 105vw;
+}
+
+.shadowLoader20D {
+    top: 5vh;
+    left: 95vw;
+}
+
 /* @keyframes rotate {
     from {
         transform: translate(-50%, -50%) rotate(0deg);
@@ -421,15 +546,15 @@ body {
 }
 
 .color2 {
-    /* filter: blur(2px) contrast(1); */
+    filter: blur(2px) contrast(1);
     z-index: 0;
     mix-blend-mode: lighten;
 }
 
 .particle {
-    background-color: firebrick;
+    /* background-color: firebrick; */
     /* background-color: #000; */
-    /* background-color: cornsilk; */
+    background-color: cornsilk;
 
     height: 2.5vh;
     width: 2.5vw;
