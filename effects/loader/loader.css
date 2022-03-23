@@ -17,7 +17,7 @@ body {
 }
 
 .common {
-    opacity: .35;
+    opacity: 1;
     position: absolute;
     display: flex;
     animation: rotate 20s linear infinite;
@@ -189,53 +189,78 @@ body {
 }
 
 .loader7 {
-    top: 37.5vh;
-    left: 37.5vw;
+    top: 50vh;
+    left: 25vw;
 }
 
 .shadowLoader7A {
-    top: 32.5vh;
-    left: 32.5vw;
+    top: 45vh;
+    left: 20vw;
 }
 
 .shadowLoader7B {
-    top: 42.5vh;
-    left: 42.5vw;
+    top: 55vh;
+    left: 30vw;
 }
 
 .shadowLoader7C {
-    top: 42.5vh;
-    left: 32.5vw;
+    top: 55vh;
+    left: 20vw;
 }
 
 .shadowLoader7D {
-    top: 32.5vh;
-    left: 42.5vw;
+    top: 45vh;
+    left: 30vw;
 }
 
 .loader8 {
-    top: 62.5vh;
-    left: 62.5vw;
+    top: 50vh;
+    left: 50vw;
 }
 
 .shadowLoader8A {
-    top: 57.5vh;
-    left: 57.5vw;
+    top: 45vh;
+    left: 45vw;
 }
 
 .shadowLoader8B {
-    top: 67.5vh;
-    left: 67.5vw;
+    top: 55vh;
+    left: 55vw;
 }
 
 .shadowLoader8C {
-    top: 57.5vh;
-    left: 67.5vw;
+    top: 55vh;
+    left: 45vw;
 }
 
 .shadowLoader8D {
-    top: 67.5vh;
-    left: 57.5vw;
+    top: 45vh;
+    left: 55vw;
+}
+
+.loader9 {
+    top: 50vh;
+    left: 75vw;
+}
+
+.shadowLoader9A {
+    top: 45vh;
+    left: 70vw;
+}
+
+.shadowLoader9B {
+    top: 55vh;
+    left: 80vw;
+}
+
+.shadowLoader9C {
+    top: 55vh;
+    left: 70vw;
+}
+
+.shadowLoader9D {
+    top: 45vh;
+    left: 80vw;
 }
 
 @keyframes rotate {
@@ -252,16 +277,16 @@ body {
     background-color: firebrick;
     /* background-color: #000; */
     /* background-color: cornsilk; */
-    height: 5vh;
-    width: 5vw;
-    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
     z-index: 2;
 }
 
 .particle:first-child,
 .particle:last-child {
-    width: 100px;
-    height: 100px;
+    width: 25px;
+    height: 25px;
 }
 
 .particle:nth-child(1),
@@ -269,7 +294,7 @@ body {
 .particle:nth-child(5),
 .particle:nth-child(7),
 .particle:nth-child(9) {
-    animation: pulse 3s ease-in-out infinite;
+    /* animation: pulse 10s ease-in-out infinite; */
 }
 
 @keyframes pulse {
@@ -291,7 +316,7 @@ body {
 }
 
 .leftSpin {
-    animation: leftSpin 20.5s linear infinite;
+    /* animation: leftSpin 1.5s linear infinite; */
 }
 
 @keyframes leftSpin {
@@ -305,7 +330,7 @@ body {
 }
 
 .rightSpin {
-    animation: rightSpin 20.5s linear infinite;
+    /* animation: rightSpin 1.5s linear infinite; */
 }
 
 @keyframes rightSpin {
