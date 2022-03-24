@@ -509,6 +509,132 @@
     left: 95vw;
 }
 
+
+.loader21 {
+    top: 100vh;
+    left: 0vw;
+}
+
+.shadowLoader21A {
+    top: 95vh;
+    left: -5vw;
+}
+
+.shadowLoader21B {
+    top: 105vh;
+    left: 5vw;
+}
+
+.shadowLoader21C {
+    top: 95vh;
+    left: 5vw;
+}
+
+.shadowLoader21D {
+    top: 105vh;
+    left: -5vw;
+}
+
+.loader22 {
+    top: 100vh;
+    left: 25vw;
+}
+
+.shadowLoader22A {
+    top: 95vh;
+    left: 20vw;
+}
+
+.shadowLoader22B {
+    top: 105vh;
+    left: 30vw;
+}
+
+.shadowLoader22C {
+    top: 95vh;
+    left: 30vw;
+}
+
+.shadowLoader22D {
+    top: 105vh;
+    left: 20vw;
+}
+
+.loader23 {
+    top: 100vh;
+    left: 50vw;
+}
+
+.shadowLoader23A {
+    top: 95vh;
+    left: 45vw;
+}
+
+.shadowLoader23B {
+    top: 105vh;
+    left: 55vw;
+}
+
+.shadowLoader23C {
+    top: 95vh;
+    left: 55vw;
+}
+
+.shadowLoader23D {
+    top: 105vh;
+    left: 45vw;
+}
+
+.loader24 {
+    top: 100vh;
+    left: 75vw;
+}
+
+.shadowLoader24A {
+    top: 95vh;
+    left: 70vw;
+}
+
+.shadowLoader24B {
+    top: 105vh;
+    left: 80vw;
+}
+
+.shadowLoader24C {
+    top: 95vh;
+    left: 80vw;
+}
+
+.shadowLoader24D {
+    top: 105vh;
+    left: 70vw;
+}
+
+.loader25 {
+    top: 100vh;
+    left: 100vw;
+}
+
+.shadowLoader25A {
+    top: 95vh;
+    left: 95vw;
+}
+
+.shadowLoader25B {
+    top: 105vh;
+    left: 105vw;
+}
+
+.shadowLoader25C {
+    top: 95vh;
+    left: 105vw;
+}
+
+.shadowLoader25D {
+    top: 105vh;
+    left: 95vw;
+}
+
 /* @keyframes rotate {
     from {
         transform: translate(-50%, -50%) rotate(0deg);
@@ -545,11 +671,12 @@
 body {
     /* prevents jumpy animation loop */
     overflow: hidden;
+    /* background-color: transparent; */
     /* background-color: #ad0170; */
     /* background-color: peru; */
-    /* background-color: bisque; */
-    /* background-color: transparent; */
-    background-image: url(../backgrounds/dryFlowers.jpg);
+    background-color: bisque;
+    background-image: url(../backgrounds/marigold.jpg);
+    background-blend-mode: darken;
     mix-blend-mode: color-burn;
 
     filter: url('#goo');
