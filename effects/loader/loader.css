@@ -8,15 +8,6 @@
 }
 
 /* LIQUID LOADER ANIMATION */
-body {
-    /* prevents jumpy animation loop */
-    overflow: hidden;
-    /* background-color: #ad0170; */
-    background-color: peru;
-    mix-blend-mode: color-burn;
-    filter: url('#goo');
-}
-
 .loader1 {
     top: 25vh;
     left: 25vw;
@@ -551,10 +542,23 @@ body {
     mix-blend-mode: lighten;
 }
 
+body {
+    /* prevents jumpy animation loop */
+    overflow: hidden;
+    /* background-color: #ad0170; */
+    /* background-color: peru; */
+    /* background-color: bisque; */
+    /* background-color: transparent; */
+    background-image: url(../backgrounds/marigold.jpg);
+    /* background-blend-mode: color-burn; */
+
+    filter: url('#goo');
+}
+
 .particle {
-    /* background-color: firebrick; */
-    /* background-color: #000; */
-    background-color: cornsilk;
+    background-color: firebrick;
+    /* background-color: bisque; */
+    /* background-color: cornsilk; */
 
     height: 2.5vh;
     width: 2.5vw;
