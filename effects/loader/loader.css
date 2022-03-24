@@ -549,8 +549,8 @@ body {
     /* background-color: peru; */
     /* background-color: bisque; */
     /* background-color: transparent; */
-    background-image: url(../backgrounds/marigold.jpg);
-    /* background-blend-mode: color-burn; */
+    background-image: url(../backgrounds/dryFlowers.jpg);
+    mix-blend-mode: color-burn;
 
     filter: url('#goo');
 }
@@ -562,7 +562,7 @@ body {
 
     height: 2.5vh;
     width: 2.5vw;
-    border-radius: 100%;
+    border-radius: 50%;
     z-index: 2;
 }
 
@@ -605,11 +605,11 @@ body {
 
 @keyframes leftSpin {
     from {
-        transform: rotate(0deg) translateX(-20vw)
+        transform: rotate(0deg) translateX(0vw)
     }
 
     to {
-        transform: rotate(360deg) translateX(-20vw)
+        transform: rotate(0deg) translateX(0vw)
     }
 }
 
@@ -620,11 +620,11 @@ body {
 
 @keyframes rightSpin {
     from {
-        transform: rotate(0deg)
+        transform: rotate(0deg) translateX(0vw)
     }
 
     to {
-        transform: rotate(360deg)
+        transform: rotate(0deg) translateY(0vw)
     }
 }
 
