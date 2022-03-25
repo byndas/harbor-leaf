@@ -646,39 +646,39 @@
 } */
 
 .common {
-    opacity: 1;
     position: absolute;
     display: flex;
-    animation: rotate 16s linear infinite;
+    animation: rotate 116s linear infinite;
 }
 
 .color1 {
     /* only works because position is absolute */
-    transform: translate(0%, 0%) rotate(360deg);
+    transform: translate(0%, 0%) rotate(0deg);
 
     /* amazing filter effects! */
     filter: blur(1px) contrast(15);
     z-index: 5;
-    mix-blend-mode: lighten;
 }
 
 .color2 {
-    filter: blur(2px) contrast(1);
+    filter: blur(0px) contrast(1);
     z-index: 0;
-    mix-blend-mode: lighten;
 }
 
 body {
     /* prevents jumpy animation loop */
     overflow: hidden;
-    /* background-color: transparent; */
-    /* background-color: #ad0170; */
+    background-color: transparent;
+    /* background-color: bisque; */
     /* background-color: peru; */
-    background-color: bisque;
-    background-image: url(../backgrounds/marigold.jpg);
-    background-blend-mode: darken;
-    mix-blend-mode: color-burn;
+    background-color: goldenrod;
 
+    /* background-image: url(../backgrounds/marigold.jpg); */
+    mix-blend-mode: color-burn;
+    background-blend-mode: color-dodge;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     filter: url('#goo');
 }
 
@@ -686,6 +686,7 @@ body {
     background-color: firebrick;
     /* background-color: bisque; */
     /* background-color: cornsilk; */
+    background-color: goldenrod;
 
     height: 2.5vh;
     width: 2.5vw;
@@ -704,7 +705,7 @@ body {
 .particle:nth-child(5),
 .particle:nth-child(7),
 .particle:nth-child(9) {
-    animation: pulse 16s ease-in-out infinite;
+    animation: pulse 6s ease-in-out infinite;
 }
 
 @keyframes pulse {
@@ -731,12 +732,16 @@ body {
 
 
 @keyframes leftSpin {
-    from {
-        transform: rotate(0deg) translateX(0vw)
+    0% {
+        transform: rotate(0deg) translateY(0vh)
     }
 
-    to {
-        transform: rotate(0deg) translateX(0vw)
+    50% {
+        transform: rotate(0deg) translateY(10vh)
+    }
+
+    100% {
+        transform: rotate(0deg) translateY(0vh)
     }
 }
 
