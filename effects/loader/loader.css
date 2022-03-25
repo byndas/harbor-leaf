@@ -668,7 +668,7 @@
 body {
     /* prevents jumpy animation loop */
     overflow: hidden;
-    background-color: transparent;
+    /* background-color: transparent; */
     /* background-color: bisque; */
     /* background-color: peru; */
     background-color: goldenrod;
@@ -683,10 +683,10 @@ body {
 }
 
 .particle {
-    background-color: firebrick;
+    /* background-color: firebrick; */
     /* background-color: bisque; */
-    /* background-color: cornsilk; */
-    background-color: goldenrod;
+    background-color: cornsilk;
+    /* background-color: goldenrod; */
 
     height: 2.5vh;
     width: 2.5vw;
