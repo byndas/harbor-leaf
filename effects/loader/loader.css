@@ -690,18 +690,19 @@ section {
     height: 100%;
     width: 100%;
     /* background-color: maroon; */
+    /* background-color: black; */
     background-color: lemonchiffon;
 
     opacity: .75;
     z-index: 2;
 
-    /* filter: blur(15px); */
+    filter: invert(75%);
+    filter: blur(0px);
     /* filter: brightness(0.4); */
     /* filter: contrast(50%); */
     /* filter: drop-shadow(16px 16px 20px navy); */
     /* filter: grayscale(50%); */
     /* filter: hue-rotate(90deg); */
-    filter: invert(75%);
     /* filter: saturate(30%); */
     /* filter: sepia(60%); */
     /* filter: opacity(.85); */
