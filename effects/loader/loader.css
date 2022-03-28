@@ -689,7 +689,6 @@ section {
     height: 100vh;
     width: 50vw;
     /* background-color: maroon; */
-    /* background-color: black; */
     background-color: lemonchiffon;
 
     opacity: 1;
@@ -706,10 +705,10 @@ section {
 }
 
 .particle {
-    background-color: firebrick;
     /* background-color: bisque; */
-    /* background-color: cornsilk; */
     /* background-color: goldenrod; */
+    /* background-color: firebrick; */
+    background-color: cornsilk;
 
     height: 2.5vh;
     width: 2.5vw;
