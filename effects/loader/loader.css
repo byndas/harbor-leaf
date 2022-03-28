@@ -653,39 +653,66 @@
 
 .color1 {
     /* only works because position is absolute */
-    transform: translate(0%, 0%) rotate(0deg);
+    /* transform: translate(10%, 10%) rotate(90deg); */
 
     /* amazing filter effects! */
-    filter: blur(1px) contrast(15);
-    z-index: 5;
+    filter: blur(0px) contrast(10px);
+    z-index: 1;
 }
 
 .color2 {
-    filter: blur(0px) contrast(1);
+    filter: blur(0px) contrast(0);
     z-index: 0;
 }
 
 body {
+    height: 100vh;
+    width: 100vw;
     /* prevents jumpy animation loop */
     overflow: hidden;
     /* background-color: transparent; */
-    /* background-color: bisque; */
+    /* background-color: goldenrod; */
     /* background-color: peru; */
-    background-color: goldenrod;
+    background-color: bisque;
 
     /* background-image: url(../backgrounds/marigold.jpg); */
-    mix-blend-mode: color-burn;
-    background-blend-mode: color-dodge;
+    /* mix-blend-mode: color-burn; */
+    /* background-blend-mode: color-dodge; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     filter: url('#goo');
+    filter: brightness(.4);
+
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    /* background-color: maroon; */
+    background-color: lemonchiffon;
+
+    opacity: .75;
+    z-index: 2;
+
+    /* filter: blur(15px); */
+    /* filter: brightness(0.4); */
+    /* filter: contrast(50%); */
+    /* filter: drop-shadow(16px 16px 20px navy); */
+    /* filter: grayscale(50%); */
+    /* filter: hue-rotate(90deg); */
+    filter: invert(75%);
+    /* filter: saturate(30%); */
+    /* filter: sepia(60%); */
+    /* filter: opacity(.85); */
+    /* filter: url("filters.svg#filter-id"); */
+
 }
 
 .particle {
-    /* background-color: firebrick; */
+    background-color: firebrick;
     /* background-color: bisque; */
-    background-color: cornsilk;
+    /* background-color: cornsilk; */
     /* background-color: goldenrod; */
 
     height: 2.5vh;
@@ -737,7 +764,7 @@ body {
     }
 
     50% {
-        transform: rotate(0deg) translateY(10vh)
+        transform: rotate(0deg) translateY(20vh)
     }
 
     100% {
