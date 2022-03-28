@@ -681,8 +681,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    filter: url('#goo');
-    filter: brightness(.4);
+    filter: url('#goo') brightness(.5);
 
 }
 
@@ -696,16 +695,12 @@ section {
     opacity: .75;
     z-index: 2;
 
-    filter: invert(75%);
-    filter: blur(0px);
-    /* filter: brightness(0.4); */
-    /* filter: contrast(50%); */
-    /* filter: drop-shadow(16px 16px 20px navy); */
-    /* filter: grayscale(50%); */
-    /* filter: hue-rotate(90deg); */
-    /* filter: saturate(30%); */
-    /* filter: sepia(60%); */
+    filter: invert(1) brightness(.5) contrast(1.04) blur(1px) grayscale(.25);
+    /* filter: sepia(.5); */
     /* filter: opacity(.85); */
+    /* filter: saturate(.5); */
+    /* filter: hue-rotate(220deg); */
+    /* filter: drop-shadow(1px 1px 2px navy); */
     /* filter: url("filters.svg#filter-id"); */
 
 }
