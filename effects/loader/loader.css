@@ -663,6 +663,10 @@
 .color2 {
     filter: blur(0px) contrast(0);
     z-index: 0;
+
+    outline-width: 6px;
+    outline-color: white;
+    outline-style: groove;
 }
 
 body {
