@@ -667,9 +667,9 @@
     filter: blur(0px) contrast(0);
     z-index: 0;
 
-    outline-width: 6px;
+    outline-width: 5px;
     outline-color: white;
-    outline-style: double;
+    outline-style: dotted;
 }
 
 body {
@@ -678,9 +678,9 @@ body {
     /* prevents jumpy animation loop */
     overflow: hidden;
     /* background-color: transparent; */
-    background-color: peru;
-    background-color: bisque;
-    background-color: goldenrod;
+    /* background-color: peru; */
+    /* background-color: bisque; */
+    /* background-color: goldenrod; */
     background-color: teal;
 
 
@@ -714,12 +714,11 @@ section {
 }
 
 .particle {
-    background-color: lemonchiffon;
-    background-color: bisque;
-    background-color: firebrick;
-    background-color: goldenrod;
+    /* background-color: lemonchiffon; */
+    /* background-color: bisque; */
+    /* background-color: firebrick; */
+    /* background-color: goldenrod; */
     background-color: cornsilk;
-
 
     height: 2.5vh;
     width: 2.5vw;
@@ -784,12 +783,16 @@ section {
 
 
 @keyframes rightSpin {
-    from {
-        transform: rotate(0deg) translateX(0vw)
+    0% {
+        transform: rotate(0deg) translateY(0vh)
     }
 
-    to {
-        transform: rotate(0deg) translateY(0vw)
+    50% {
+        transform: rotate(0deg) translateY(-20vh)
+    }
+
+    100% {
+        transform: rotate(0deg) translateY(0vh)
     }
 }
 
