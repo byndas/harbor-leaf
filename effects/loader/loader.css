@@ -659,22 +659,26 @@
     /* transform: translate(10%, 10%) rotate(90deg); */
 
     /* amazing filter effects! */
-    /* filter: blur(5px) contrast(0); */
+    filter: blur(1px) contrast(0) brightness(.5);
     z-index: 1;
 }
 
 .color2 {
+    /* extra layer */
     filter: blur(0px) contrast(0);
     z-index: 0;
 
-    outline-width: 10px;
+    outline-width: 1px;
     outline-color: white;
-    outline-style: dashed;
+    outline-style: groove;
 }
 
-body {
-    height: 100vh;
-    width: 100vw;
+.body {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    height: 99vh;
+    width: 99vw; */
     /* prevents jumpy animation loop */
     /* overflow: hidden; */
     /* background-color: transparent; */
@@ -683,8 +687,6 @@ body {
     /* background-color: teal; */
     /* background-color: bisque; */
     background-color: mistyrose;
-
-
 
     /* background-image: url(../backgrounds/marigold.jpg); */
     /* mix-blend-mode: color-burn; */
@@ -695,15 +697,18 @@ body {
     filter: url('#goo') brightness(.5);
 }
 
-section {
-    height: 50vh;
-    width: 100vw;
+.section {
+    height: 0vh;
+    width: 0vw;
+    /* position: absolute; */
+    /* top: 33vh;
+    left: 33vw; */
     /* background-color: lemonchiffon; */
     background-color: maroon;
 
     opacity: 1;
     z-index: 3;
-    /* border-radius: 1px; */
+    border-radius: 1px;
     filter: invert(1) brightness(.5) contrast(1.04) blur(1px) grayscale(.25);
     /* filter: sepia(.5); */
     /* filter: opacity(.85); */

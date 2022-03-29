@@ -92,7 +92,8 @@ header {
     width: 100vw;
     height: 100vh;
     /* background-color: skyblue; */
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
+    background-color: mistyrose;
     filter: blur(.25px) contrast(.5);
     z-index: 1;
     position: absolute;
