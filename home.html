@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
 
     <link rel="stylesheet" href="home.css">
-    <!-- <link rel="stylesheet" href="sky.css"> -->
-    <!-- <link rel="stylesheet" href="navBtns.css"> -->
+    <link rel="stylesheet" href="sky.css">
+    <link rel="stylesheet" href="navBtns.css">
     <link rel="stylesheet" href="./effects/loader/loader.css">
 
-    <!-- <script src="particleVector.js" async defer></script> -->
-    <!-- <script src="loopVector.js" async defer></script> -->
+    <script src="particleVector.js" async defer></script>
+    <script src="loopVector.js" async defer></script>
 
     <!-- <script src="https://cdn.pubnub.com/pubnub.min.js"></script> -->
     <!-- <script src="/matrix/unistring.js"></script> -->
@@ -89,12 +89,12 @@
     </nav>
     <div class="swiper">
         <div class="swiper-wrapper">
-            <!-- <section class="swiper-slide" id="home">
+            <section class="swiper-slide" id="home">
                 <canvas id='particleVector'></canvas>
                 <div class="stars"></div>
                 <div class="clouds"></div>
-            </section> -->
-            <!-- <section class="swiper-slide" id="projects">
+            </section>
+            <section class="swiper-slide" id="projects">
                 <canvas id='loopVector'></canvas>
                 <svg>
                     <defs>
@@ -108,7 +108,7 @@
                         </filter>
                     </defs>
                 </svg>
-            </section> -->
+            </section>
             <section class="swiper-slide" id="contact">
                 <div class="body">
                     <div class="section">
@@ -1676,12 +1676,12 @@
 
         const swiper = new Swiper('.swiper', {
             direction: 'vertical',
-            effect:'slide',
+            effect:'fade',
             speed: 1000,
             /* 'cube' | 'fade' | 'coverflow' | 'flip' | 'creative' | 'cards' */
             roundLengths: true,
         });
-        /*
+        
         const navAboutBtn = document.getElementById('navAbout');
         const navProjectsBtn = document.getElementById('navProjects');
         const navContactBtn = document.getElementById('navContact');
@@ -1689,7 +1689,6 @@
         navAboutBtn.addEventListener('click', () => swiper.slideTo(0));
         navProjectsBtn.addEventListener('click', () => swiper.slideTo(1));
         navContactBtn.addEventListener('click', () => swiper.slideTo(2));
-        */
 </script>
 
 </html>
