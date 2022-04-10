@@ -13,8 +13,8 @@ body {
 
 :root {
     /* --home-bg-color: rgb(58, 60, 61); */
-    --home-bg-color: skyblue;
-    --projects-bg-color: #AED6F1;
+    --home-bg-color: #b4d3e6;
+    --projects-bg-color: #5a707c;
     --contact-bg-color: grey;
 }
 
@@ -62,11 +62,12 @@ header {
 }
 
 #projects {
-    background-color: var(--projects-bg-color);
+    background-color: var(--projects-bg-color)
 }
 
 #contact {
-    background-color: var(--contact-bg-color);
+    /* background-color: var(--contact-bg-color); */
+    background-color: grey;
 }
 
 .bubbler {
