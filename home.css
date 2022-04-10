@@ -13,9 +13,11 @@ body {
 
 :root {
     /* --home-bg-color: rgb(58, 60, 61); */
-    --home-bg-color: #b4d3e6;
+    /* --home-bg-color: cornflowerblue; */
+    /* --home-bg-color: #b4d3e6; */
+    --home-bg-color: #5a707c;
     --projects-bg-color: #5a707c;
-    --contact-bg-color: grey;
+    --contact-bg-color: #5a707c;
 }
 
 nav,
@@ -66,8 +68,7 @@ header {
 }
 
 #contact {
-    /* background-color: var(--contact-bg-color); */
-    background-color: grey;
+    background-color: var(--contact-bg-color);
 }
 
 .bubbler {
@@ -92,9 +93,10 @@ header {
     left: 0;
     width: 100vw;
     height: 100vh;
+    /* background-color: mistyrose; */
     /* background-color: skyblue; */
     /* background-color: cornflowerblue; */
-    background-color: mistyrose;
+    /* background-color: transparent; */
     filter: blur(.25px) contrast(.5);
     z-index: 1;
     position: absolute;

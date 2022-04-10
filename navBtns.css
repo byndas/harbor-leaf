@@ -13,8 +13,8 @@ p {
     text-align: center;
     position: relative;
     letter-spacing: 1vw;
-    /* color: skyblue; */
-    color: HSL(48, 89%, 90%);
+    color: #5a707c;
+    /* color: HSL(48, 89%, 90%); */
     cursor: pointer;
 }
 
@@ -25,13 +25,13 @@ p {
 .ripple {
     filter: url(#goo);
     z-index: 10;
-    width: calc(100vw / 3);
+    width: calc(100vw / 6);
     height: 11.5vh;
     border: none;
     font: inherit;
     background: none;
     cursor: pointer;
-    opacity: .65;
+    opacity: .35;
     margin: 4vh 0 0 0;
     overflow: hidden;
     /* outline: 1rem solid black; */

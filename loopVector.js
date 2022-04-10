@@ -14,7 +14,7 @@ class FlowFieldEffect {
     #radius;
     constructor(ctxLooper, width, height) {
         this.#ctx = ctxLooper;
-        this.#ctx.lineWidth = .25;
+        this.#ctx.lineWidth = .1; // .25;
         this.#width = width;
         this.#height = height;
         this.#radius = .01;
@@ -23,7 +23,7 @@ class FlowFieldEffect {
         this.#mapField();
         this.timer = 0;
         this.cellSize = 10;
-        this.interval = 1000/60;
+        this.interval = 16;
         // this.interval = 0;
         this.timer = 0;
         this.lastTime = 0;
