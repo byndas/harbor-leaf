@@ -1675,13 +1675,15 @@
     import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
 
         const swiper = new Swiper('.swiper', {
-            direction: 'horizontal',
-            effect:'fade',
-            speed: 1000,
+            speed: 800,
+            mousewheel: true,
+            direction: 'vertical',
+            effect:'slide',
             /* 'cube' | 'fade' | 'coverflow' | 'flip' | 'creative' | 'cards' */
             roundLengths: true,
+
         });
-        
+        /*
         const navAboutBtn = document.getElementById('navAbout');
         const navProjectsBtn = document.getElementById('navProjects');
         const navContactBtn = document.getElementById('navContact');
@@ -1689,6 +1691,7 @@
         navAboutBtn.addEventListener('click', () => swiper.slideTo(0));
         navProjectsBtn.addEventListener('click', () => swiper.slideTo(1));
         navContactBtn.addEventListener('click', () => swiper.slideTo(2));
+        */
 </script>
 
 </html>

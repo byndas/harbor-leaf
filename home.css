@@ -13,11 +13,10 @@ body {
 
 :root {
     /* --home-bg-color: rgb(58, 60, 61); */
-    /* --home-bg-color: cornflowerblue; */
-    /* --home-bg-color: #b4d3e6; */
-    --home-bg-color: #5a707c;
-    --projects-bg-color: #5a707c;
-    --contact-bg-color: #5a707c;
+    /* --home-bg-color: #5a707c; */
+    --home-bg-color: #b4d3e6;
+    --projects-bg-color: #b4d3e6;
+    --contact-bg-color: #b4d3e6;
 }
 
 nav,
