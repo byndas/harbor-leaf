@@ -15,8 +15,10 @@ body {
     /* --home-bg-color: rgb(58, 60, 61); */
     /* --home-bg-color: #5a707c; */
     --home-bg-color: #b4d3e6;
-    --projects-bg-color: #b4d3e6;
-    --contact-bg-color: #b4d3e6;
+    --projects-bg-color: transparent;
+    /* --projects-bg-color: #b4d3e6; */
+    --contact-bg-color: transparent;
+    --contact-bg-color: transparent;
 }
 
 nav,
@@ -58,13 +60,19 @@ header {
     width: 50vw;
     height: 50vh;
     opacity: .75;
-    color: black;
-    font-size: 50px;
+    /* color: black; */
+    color: #5a707c;
+    /* color: #b4d3e6; */
+    font-size: 250%;
     text-align: center;
     position: absolute;
     border-radius: 20px;
     background-color: mistyrose;
+    /* background-color: maroon; */
+
     mix-blend-mode: overlay;
+    z-index: 1;
+    /* make the border goo! */
 }
 
 .swiper {
