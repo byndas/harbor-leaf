@@ -132,14 +132,14 @@ init();
 animate();
 
 // RESPONSIVE - empties and refills particle array every time window changes size + changes starCanvas size
-// window.addEventListener('resize',
-	// function(){
-		// starCanvas.width = innerWidth;
-		// starCanvas.height = innerHeight;
-        //  mouse.radius = ((starCanvas.height/80) * (starCanvas.width/80));
-		// init();
-// 	}
-// )
+window.addEventListener('resize',
+	function(){
+		starCanvas.width = innerWidth;
+		starCanvas.height = innerHeight;
+         mouse.radius = ((starCanvas.height/80) * (starCanvas.width/80));
+		init();
+	}
+)
 // 2) SETS MOUSE POSITION AS UNDEFINED when it leaves starCanvas
 // window.addEventListener('mouseout',
 // 	function(){

@@ -1642,12 +1642,18 @@
                     PROJECTS<br>
                     <div class="swiper swiper-h">
                         <div class="swiper-wrapper">
-                            <a href="http://1209.ge/" target="_blank" class="swiper-slide">
-                                <img src="./effects/images/aeroGeorgia1.png" alt="image of website landing page" />
-                            </a>
-                            <a href="http://1209.ge/" target="_blank" class="swiper-slide">
-                                <img src="./effects/images/aeroGeorgia2.png" alt="image of website landing page" />
-                            </a>
+                            <div class="swiper-slide">
+                                <a href="http://1209.ge/" target="_blank">
+                                    <img src="./effects/images/aeroGeorgia1.png" alt="image of website landing page" />
+                                </a>
+                                <!-- <p>Aeroclub Georgia</p> -->
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="http://1209.ge/" target="_blank">
+                                    <img src="./effects/images/aeroGeorgia2.png" alt="image of website landing page" />
+                                </a>
+                                <!-- <p>Aeroclub Georgia</p> -->
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -1716,7 +1722,9 @@
          roundLengths: true,
          nested: true,
          loop: true,
-         loopedSlides: 2,
+         autoplay: {
+            delay: 2000,
+         },
          });
         
     
