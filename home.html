@@ -87,11 +87,13 @@
             </defs>
         </svg>
     </nav> -->
-    <div class="swiper">
+    <div class="swiper swiper-v">
         <div class="swiper-wrapper">
             <section class="swiper-slide" id="home">
                 <section class="content">
-                    <br>MARC BYNDAS:<br><br>WEBOTEUR
+                    <br><br>Marc Byndas
+                    <br><br>Front End
+                    <br>Web Builder
                 </section>
                 <div class="body">
                     <div class="section">
@@ -1637,7 +1639,17 @@
             </section>
             <section class="swiper-slide" id="projects">
                 <section class="content">
-                    PROJECTS
+                    PROJECTS<br>
+                    <div class="swiper swiper-h">
+                        <div class="swiper-wrapper">
+                            <a href="http://1209.ge/" target="_blank" class="swiper-slide">
+                                <img src="./effects/images/aeroGeorgia1.png" alt="image of website landing page" />
+                            </a>
+                            <a href="http://1209.ge/" target="_blank" class="swiper-slide">
+                                <img src="./effects/images/aeroGeorgia2.png" alt="image of website landing page" />
+                            </a>
+                        </div>
+                    </div>
                 </section>
                 <canvas id='particleVector'></canvas>
                 <div class="stars"></div>
@@ -1645,7 +1657,7 @@
             </section>
             <section class="swiper-slide" id="contact">
                 <section class="content">
-                    <br><br><br>
+                    <br><br>
                     byndasma@<br>gmail.com
                 </section>
                 <canvas id='loopVector'></canvas>
@@ -1686,15 +1698,28 @@
 <script type="module">
     import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
 
-        const swiper = new Swiper('.swiper', {
+        const swiperV = new Swiper('.swiper-v', {
             speed: 800,
             mousewheel: true,
             direction: 'vertical',
             effect:'slide',
             /* 'cube' | 'fade' | 'coverflow' | 'flip' | 'creative' | 'cards' */
             roundLengths: true,
-
         });
+
+         const swiperH = new Swiper('.swiper-h', {
+         speed: 800,
+         mousewheel: true,
+         direction: 'horizontal',
+         effect:'fade',
+         /* 'cube' | 'fade' | 'coverflow' | 'flip' | 'creative' | 'cards' */
+         roundLengths: true,
+         nested: true,
+         loop: true,
+         loopedSlides: 2,
+         });
+        
+    
         /*
         const navAboutBtn = document.getElementById('navAbout');
         const navProjectsBtn = document.getElementById('navProjects');

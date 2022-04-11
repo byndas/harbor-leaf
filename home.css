@@ -60,7 +60,7 @@ header {
     width: 50vw;
     height: 50vh;
     opacity: .75;
-    color: black;
+    /* color: black; */
     /* color: #5a707c; */
     /* color: #b4d3e6; */
     font-size: 250%;
@@ -68,15 +68,22 @@ header {
     position: absolute;
     border-radius: 20px;
     /* background-color: mistyrose; */
-    /* background-color: aliceblue; */
-    background-color: grey;
+    /* background-color: grey; */
+    background-color: aliceblue;
 
     mix-blend-mode: overlay;
-    z-index: 1;
+    z-index: 4 !important;
     /* make the border goo! */
+    /* filter: url("#goo"); */
 }
 
-.swiper {
+img {
+    width: 75%;
+    height: 75%;
+    opacity: 1;
+}
+
+.swiper-v {
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -109,6 +116,12 @@ header {
     height: 100vh;
     pointer-events: none;
     position: absolute;
+    z-index: -1;
+}
+
+.stars,
+.clouds {
+    z-index: -1;
 }
 
 #loopVector {
@@ -121,13 +134,11 @@ header {
     /* background-color: cornflowerblue; */
     /* background-color: transparent; */
     filter: blur(.25px) contrast(.5);
-    z-index: 1;
+    z-index: 0;
     position: absolute;
 }
 
 svg {
-    /* height: 0vh;
-    width: 0vw; */
     display: none;
 }
 
