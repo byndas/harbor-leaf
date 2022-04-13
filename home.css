@@ -78,8 +78,8 @@ header {
     /* make the border goo! */
     /* filter: url("#goo"); */
 
-    /* border-style: solid; */
-    /* border-width: 5px; */
+    border-style: solid;
+    border-width: 2.5px;
     border-radius: 20px;
 }
 
@@ -113,9 +113,6 @@ img {
     mix-blend-mode: overlay;
     /* filter: invert(75%) contrast(.75); */
     background-color: thistle;
-    /* border-color: thistle; */
-    border-style: solid;
-    border-width: 2.5px;
 }
 
 #home {
@@ -141,9 +138,6 @@ img {
     align-content: center;
     filter: invert(100) contrast(1.25);
     mix-blend-mode:overlay;
-    border-style: solid;
-    border-width: 2.5px;
-
 }
 
 #contact {
