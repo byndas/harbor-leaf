@@ -87,9 +87,9 @@ img {
     height: 75%;
     opacity: 1;
     border-radius: 20px;
-    /* border-color: #b4d3e6; */
-    /* border-style: solid; */
-    /* border-width: 2.5px; */
+    border-color: thistle;
+    border-style: solid;
+    border-width: 2.5px;
 }
 
 .swiper-v {
@@ -105,6 +105,7 @@ img {
 
 #homeContent {
     mix-blend-mode: overlay;
+    background-clip: text;
 }
 
 #home {
@@ -112,8 +113,9 @@ img {
 }
 
 #projectsContent {
-    color: aliceblue;
-    background-color: transparent;
+    color: thistle;
+    background-color: snow;
+    mix-blend-mode: multiply;
 }
 
 #projects {

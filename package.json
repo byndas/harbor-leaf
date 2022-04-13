@@ -1,0 +1,19 @@
+{
+  "name": "harbor-leaf",
+  "version": "1.0.0",
+  "description": "personal portfolio",
+  "main": "home.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemokh/harbor-leaf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lemokh/harbor-leaf/issues"
+  },
+  "homepage": "https://github.com/lemokh/harbor-leaf#readme"
+}
