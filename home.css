@@ -106,14 +106,17 @@ img {
 }
 
 #homeContent {
-    mix-blend-mode: overlay;
     opacity: .45;
     display: grid;
     align-content: center;
+    filter: blur(.5px);
+    mix-blend-mode: overlay;
+
 }
 
 #home {
     background-color: var(--home-bg-color);
+    filter: blur(.5px);
 }
 
 #projectsContent {
