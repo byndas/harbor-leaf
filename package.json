@@ -5,7 +5,9 @@
   "main": "home.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm start"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "run": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/lemokh/harbor-leaf/issues"
   },
-  "homepage": "https://github.com/lemokh/harbor-leaf"
+  "homepage": "https://github.com/lemokh/harbor-leaf",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
