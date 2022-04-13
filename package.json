@@ -22,6 +22,9 @@
   },
   "homepage": "https://github.com/lemokh/harbor-leaf#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "path": "^0.12.7",
+    "serve": "^13.0.2",
+    "static": "^2.0.0"
   }
 }
