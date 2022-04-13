@@ -105,6 +105,7 @@ img {
 
 #homeContent {
     mix-blend-mode: overlay;
+    opacity: .45;
 }
 
 #home {

@@ -681,21 +681,20 @@
     width: 99vw; */
     /* prevents jumpy animation loop */
     /* overflow: hidden; */
-    /* background-color: transparent; */
     /* background-color: peru; */
     /* background-color: goldenrod; */
     /* background-color: teal; */
     /* background-color: bisque; */
     /* background-color: mistyrose; */
-    background-color: transparent;
+    /* background-color: transparent; */
 
     /* background-image: url(../backgrounds/marigold.jpg); */
     /* mix-blend-mode: color-burn; */
     /* mix-blend-mode: difference; */
     mix-blend-mode:overlay;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center center; */
     filter: url('#goo') brightness(.5);
 }
 
@@ -710,10 +709,7 @@
 
     opacity: 1;
     z-index: 3;
-    border-radius: 100%;
-    border-style: double;
-    border-color: whitesmoke;
-    border-width: 10px;
+    /* border-radius: 100%; */
     filter: invert(1) brightness(.5) contrast(1.04) blur(1px) grayscale(.25);
     filter: drop-shadow(1px 1px 2px whitesmoke);
     /* filter: sepia(.5); */
@@ -729,6 +725,10 @@
     /* background-color: firebrick; */
     /* background-color: goldenrod; */
     background-color: cornsilk;
+    
+    /* border-color: whitesmoke;
+    border-style: double;
+    border-width: 1px; */
 
     height: 2.5vh;
     width: 2.5vw;
