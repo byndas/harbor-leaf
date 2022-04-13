@@ -14,7 +14,8 @@
   "author": "Marc Byndas",
   "license": "ISC",
   "engines": {
-    "node": "~16.13.1"
+    "node": "~16.13.1",
+    "npm": "~8.2.0"
   },
   "bugs": {
     "url": "https://github.com/lemokh/harbor-leaf/issues"
