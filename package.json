@@ -2,12 +2,9 @@
   "name": "harbor-leaf",
   "version": "1.0.0",
   "description": "portfolio",
-  "main": "home.html",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "run": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
