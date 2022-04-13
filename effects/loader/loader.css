@@ -691,7 +691,8 @@
 
     /* background-image: url(../backgrounds/marigold.jpg); */
     /* mix-blend-mode: color-burn; */
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
+    mix-blend-mode:overlay;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -710,9 +711,9 @@
     opacity: 1;
     z-index: 3;
     border-radius: 100%;
-    border-style: dotted;
+    border-style: double;
     border-color: whitesmoke;
-    border-width: 1px;
+    border-width: 10px;
     filter: invert(1) brightness(.5) contrast(1.04) blur(1px) grayscale(.25);
     filter: drop-shadow(1px 1px 2px whitesmoke);
     /* filter: sepia(.5); */
@@ -720,7 +721,6 @@
     /* filter: saturate(.5); */
     /* filter: hue-rotate(220deg); */
     /* filter: url("filters.svg#filter-id"); */
-
 }
 
 .particle {
