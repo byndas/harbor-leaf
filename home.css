@@ -67,7 +67,7 @@ header {
     /* color: black; */
     /* color: #5a707c; */
     /* color: b4d3e6#; */
-    font-size: 200%;
+    font-size: 225%;
     text-align: center;
     position: absolute;
     border-radius: 20px;
@@ -107,7 +107,7 @@ img {
     mix-blend-mode: overlay;
     opacity: .45;
     display: grid;
-    align-content: space-evenly;
+    align-content: center;
 }
 
 #home {
