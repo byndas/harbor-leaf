@@ -1,7 +1,7 @@
 {
   "name": "harbor-leaf",
   "version": "1.0.0",
-  "description": "personal portfolio",
+  "description": "portfolio",
   "main": "home.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/lemokh/harbor-leaf.git"
   },
-  "author": "",
+  "author": "Marc Byndas",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lemokh/harbor-leaf/issues"
   },
-  "homepage": "https://github.com/lemokh/harbor-leaf#readme"
+  "homepage": "https://github.com/lemokh/harbor-leaf"
 }
