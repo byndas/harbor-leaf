@@ -5,9 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "run": "node server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,6 +13,9 @@
   },
   "author": "Marc Byndas",
   "license": "ISC",
+  "engines": {
+    "node": "~16.13.1"
+  },
   "bugs": {
     "url": "https://github.com/lemokh/harbor-leaf/issues"
   },
