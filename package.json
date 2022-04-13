@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/lemokh/harbor-leaf/issues"
   },
-  "homepage": "https://github.com/lemokh/harbor-leaf",
+  "homepage": "https://github.com/lemokh/harbor-leaf#readme",
   "dependencies": {
     "express": "^4.17.3"
   }
