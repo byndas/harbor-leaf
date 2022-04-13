@@ -711,11 +711,11 @@
     z-index: 3;
     border-radius: 1px;
     filter: invert(1) brightness(.5) contrast(1.04) blur(1px) grayscale(.25);
+    filter: drop-shadow(1px 1px 2px white);
     /* filter: sepia(.5); */
     /* filter: opacity(.85); */
     /* filter: saturate(.5); */
     /* filter: hue-rotate(220deg); */
-    /* filter: drop-shadow(1px 1px 2px navy); */
     /* filter: url("filters.svg#filter-id"); */
 
 }
