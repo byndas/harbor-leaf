@@ -83,10 +83,10 @@ header {
 }
 
 img {
-    align-self: stretch;
-    justify-self: stretch;
-    width: 90%;
-    height: 25vh;
+    /* align-self: stretch; */
+    /* justify-self: stretch; */
+    width: 95%;
+    height: 95%;
     opacity: 1;
     border-radius: 20px;
     border-color: thistle;
