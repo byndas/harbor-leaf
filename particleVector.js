@@ -90,9 +90,9 @@ function connect() {
             if  (distance < (starCanvas.width/7) * (starCanvas.height/7)) 
             {   
                 opacityValue = 1-(distance/10000);
-                ctxStar.strokeStyle='rgba(0247, 220, 111,' + opacityValue +')';
+                ctxStar.strokeStyle='rgba(247, 220, 111,' + opacityValue +')';
                 ctxStar.beginPath();
-                ctxStar.lineWidth = .75;
+                ctxStar.lineWidth = .5;
                 ctxStar.moveTo(particleArray[a].x, particleArray[a].y);
                 ctxStar.lineTo(particleArray[b].x, particleArray[b].y);
                 ctxStar.stroke();
