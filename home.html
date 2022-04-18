@@ -91,8 +91,9 @@
         <div class="swiper-wrapper">
             <section class="swiper-slide" id="home">
                 <section class="content" id="homeContent">
-                    Marc Byndas
-                    <br><br>Frontend Web Dev
+                    <b class="selectable">Marc Byndas
+                        <br><br>Frontend Web Dev
+                    </b>
                 </section>
                 <canvas id='loopVector'></canvas>
                 <svg>
@@ -134,7 +135,7 @@
             </section>
             <section class="swiper-slide" id="contact">
                 <section class="content" id="contactContent">
-                    byndasma<br>@<br>gmail.com
+                    <b class="selectable">byndasma<br>@<br>gmail.com</b>
                 </section>
                 <div class="body">
                     <div class="section">
@@ -1703,7 +1704,7 @@
     import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
 
         const swiperV = new Swiper('.swiper-v', {
-            speed: 1000,
+            speed: 800,
             mousewheel: true,
             direction: 'vertical',
             effect:'fade',
@@ -1712,11 +1713,10 @@
         });
 
          const swiperH = new Swiper('.swiper-h', {
-         speed: 1000,
+         speed: 800,
          mousewheel: true,
          direction: 'horizontal',
          effect:'fade',
-         /* 'cube' | 'fade' | 'coverflow' | 'flip' | 'creative' | 'cards' */
          roundLengths: true,
          nested: true,
          loop: true,

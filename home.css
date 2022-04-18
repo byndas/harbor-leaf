@@ -107,6 +107,7 @@ img {
 }
 
 #homeContent {
+    user-select: text;
     opacity: .6;
     display: grid;
     align-content: center;
@@ -144,6 +145,12 @@ img {
     background-color: var(--contact-bg-color);
 }
 
+.selectable {
+  -moz-user-select: all;
+  -webkit-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
 
 .bubbler {
     width: 100%;
