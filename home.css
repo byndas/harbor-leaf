@@ -125,7 +125,7 @@ b::selection {
     user-select: text;
     display: grid;
     align-content: center;
-    opacity: .6;
+    /* opacity: .6; */
     mix-blend-mode:overlay;
     filter: invert(100) contrast(1.25);
 }
@@ -152,10 +152,13 @@ b::selection {
     align-content: center;
     mix-blend-mode: overlay;
     /* filter: invert(75%) contrast(.75); */
-    background-color: thistle;
+    background-color: floralwhite;
+    /* background-color: thistle; */
     /* opacity: .25; */
 }
-
+#name {
+   opacity: .65; 
+}
 #contact {
     background-color: var(--contact-bg-color);
 }
