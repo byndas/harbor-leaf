@@ -81,6 +81,12 @@ header {
     border-style: solid;
     border-width: 2.5px;
     border-radius: 20px;
+
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+
 }
 
 img {
@@ -94,7 +100,16 @@ img {
     border-style: solid;
     border-width: 2.5px;
 }
-
+b:hover {
+    -webkit-user-select: all;  /* Chrome all / Safari all */
+    -moz-user-select: all;     /* Firefox all */
+    -ms-user-select: all;      /* IE 10+ */
+    user-select: all;
+}
+b::selection {
+    background-color: black;
+    color: grey;
+}
 .swiper-v {
     height: 100vh;
     width: 100vw;
@@ -108,12 +123,11 @@ img {
 
 #homeContent {
     user-select: text;
-    opacity: .6;
     display: grid;
     align-content: center;
-    mix-blend-mode: overlay;
-    /* filter: invert(75%) contrast(.75); */
-    background-color: thistle;
+    opacity: .6;
+    mix-blend-mode:overlay;
+    filter: invert(100) contrast(1.25);
 }
 
 #home {
@@ -134,11 +148,12 @@ img {
 }
 
 #contactContent {
-    opacity: .25;
     display: grid;
     align-content: center;
-    filter: invert(100) contrast(1.25);
-    mix-blend-mode:overlay;
+    mix-blend-mode: overlay;
+    /* filter: invert(75%) contrast(.75); */
+    background-color: thistle;
+    /* opacity: .25; */
 }
 
 #contact {
@@ -149,7 +164,7 @@ img {
   -moz-user-select: all;
   -webkit-user-select: all;
   -ms-user-select: all;
-  user-select: all;
+  user-select: text;
 }
 
 .bubbler {
