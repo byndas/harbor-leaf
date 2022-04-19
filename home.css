@@ -122,12 +122,13 @@ b::selection {
 }
 
 #homeContent {
-    user-select: text;
     display: grid;
     align-content: center;
-    /* opacity: .6; */
-    mix-blend-mode:overlay;
-    filter: invert(100) contrast(1.25);
+    mix-blend-mode: overlay;
+    /* filter: invert(75%) contrast(.75); */
+    background-color: floralwhite;
+    /* background-color: thistle; */
+    /* opacity: .25; */
 }
 
 #home {
@@ -147,20 +148,21 @@ b::selection {
     background-color: var(--projects-bg-color)
 }
 
-#contactContent {
-    display: grid;
-    align-content: center;
-    mix-blend-mode: overlay;
-    /* filter: invert(75%) contrast(.75); */
-    background-color: floralwhite;
-    /* background-color: thistle; */
-    /* opacity: .25; */
-}
-#name {
-   opacity: .65; 
-}
 #contact {
     background-color: var(--contact-bg-color);
+}
+
+#contactContent {
+    user-select: text;
+    display: grid;
+    align-content: center;
+    /* opacity: .6; */
+    mix-blend-mode:overlay;
+    filter: invert(100) contrast(1.25);
+}
+
+#name {
+   opacity: .65; 
 }
 
 .selectable {
