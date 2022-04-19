@@ -52,8 +52,8 @@ class FlowFieldEffect {
         requestAnimationFrame(this.#mapField.bind(this));
 
     }
-    #getValue(x, y){
-        return (Math.cos(x * 0.05) + Math.sin(y * 0.05)) * Math.PI * this.#radius;
+    #getValue(x, y){ // 0.05 for cos & sin
+        return (Math.cos(x * 0.5) + Math.sin(y * 0.5)) * Math.PI * this.#radius;
     }
     #draw(angle){
         this.#ctx.rotate(angle);

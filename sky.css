@@ -1,10 +1,10 @@
-@keyframes move-clouds-back {
+/* @keyframes move-clouds-back {
     from {
         background-position: 0 0;
     }
 
     to {
-        background-position: 10000px 0;
+        background-position: 0px 0;
     }
 }
 
@@ -14,7 +14,7 @@
     }
 
     to {
-        background-position: 10000px 0;
+        background-position: 0px 0;
     }
 }
 
@@ -24,7 +24,7 @@
     }
 
     to {
-        background-position: 10000px 0;
+        background-position: 0px 0;
     }
 }
 
@@ -34,9 +34,9 @@
     }
 
     to {
-        background-position: 10000px 0;
+        background-position: 0px 0;
     }
-}
+} */
 
 .stars,
 .twinkling,
@@ -57,12 +57,12 @@
 }
 
 .clouds {
-    background: transparent url(http://www.script-tutorials.com/demos/360/images/clouds4.png) repeat top center;
+    background: transparent url(http://www.script-tutorials.com/demos/360/images/clouds4.png);
     z-index: 3;
 
-    -moz-animation: move-clouds-back 500s linear infinite;
+    /* -moz-animation: move-clouds-back 500s linear infinite;
     -ms-animation: move-clouds-back 500s linear infinite;
     -o-animation: move-clouds-back 500s linear infinite;
     -webkit-animation: move-clouds-back 500s linear infinite;
-    animation: move-clouds-back 500s linear infinite;
+    animation: move-clouds-back 500s linear infinite; */
 }
