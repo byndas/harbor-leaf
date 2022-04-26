@@ -1640,33 +1640,19 @@
             <section class="swiper-slide" id="projects">
                 <section class="content" id="projectsContent">
                     PROJECTS<br>
-                    <div class="swiper swiper-h1">
+                    <div class="swiper swiper-h">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide" id="aviato1">
+                            <div class="swiper-slide">
                                 <a href="http://1209.ge/" target="_blank">
                                     <img src="./effects/images/aeroGeorgia1.png" alt="image of website landing page" />
                                 </a>
+                                <!-- <p>Aeroclub Georgia</p> -->
                             </div>
-                            <div class="swiper-slide" id="chess1">
+                            <div class="swiper-slide">
                                 <a href="https://chessing.herokuapp.com/" target="_blank">
                                     <img src="./effects/images/chessing1.png" alt="image of website landing page" />
                                 </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper swiper-h2">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide" id="aviato2">
-                                <p>Aero Club Georgia
-                                    <br>Aviation Association
-                                    <br>uses React, Redux, Firebase, Bootstrap
-                                </p>
-                            </div>
-                            <div class="swiper-slide" id="chess2">
-                                <p>Chess
-                                    <br>uses Socket.io & Express server
-                                    <br>no other libraries
-                                </p>
+                                <!-- <p>Chess</p> -->
                             </div>
                         </div>
                     </div>
@@ -1726,32 +1712,19 @@
             roundLengths: true,
         });
 
-        const swiperH1 = new Swiper('.swiper-h1', {
-        speed: 1000,
-        mousewheel: true,
-        direction: 'horizontal',
-        effect:'fade',
-        roundLengths: true,
-        nested: true,
-        loop: true,
-        autoplay: {
-            delay: 2000,
-        },
-        });
+         const swiperH = new Swiper('.swiper-h', {
+         speed: 1000,
+         mousewheel: true,
+         direction: 'horizontal',
+         effect:'fade',
+         roundLengths: true,
+         nested: true,
+         loop: true,
+         autoplay: {
+            delay: 1500,
+         },
+         });
         
-        const swiperH2 = new Swiper('.swiper-h2', {
-        speed: 1000,
-        mousewheel: true,
-        direction: 'horizontal',
-        effect:'fade',
-        roundLengths: true,
-        nested: true,
-        loop: true,
-        autoplay: {
-        delay: 2000,
-        },
-        });
-
     
         /*
         const navAboutBtn = document.getElementById('navAbout');
