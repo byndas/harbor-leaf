@@ -53,7 +53,7 @@ class FlowFieldEffect {
 
     }
     #getValue(x, y){ // 0.05 for cos & sin
-        return (Math.cos(x * 0.05) + Math.sin(y * 0.5)) * Math.PI * this.#radius;
+        return (Math.cos(x) + Math.sin(x)) * Math.PI * this.#radius;
     }
     #draw(angle){
         this.#ctx.rotate(angle);
